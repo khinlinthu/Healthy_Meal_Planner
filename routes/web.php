@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('backendtemplate');
+    return view('frontend.signinpage');
 });
 
 // Route::get('/', 'FrontendController@home')->name('mainpage');

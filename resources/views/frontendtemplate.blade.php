@@ -30,6 +30,9 @@
     <script src="{{asset('frontend_asset/js/plugins.js')}}"></script>
     <script src="{{asset('frontend_asset/js/wow.min.js')}}"></script>
     <script src="{{asset('frontend_asset/js/main.js')}}"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="{{asset('my_asset/css/style.css')}}">
 	</head>
 	<body>
 	<!--
@@ -69,7 +72,7 @@
                                 <li><a href="#about-us">about us</a></li>
                                 <li><a href="#blog">Blog</a></li>
                                 <li><a href="#price">Cart</a></li>
-                                {{-- <li><a href="#subscribe">news</a></li> --}}
+                                <li><a href="#subscribe">Signin</a></li>
                                 <li><a href="#contact-us">contacts</a></li>
                               </ul>
                             </div><!-- /.navbar-collapse -->
