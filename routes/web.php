@@ -18,9 +18,11 @@ Route::get('/', function () {
 
 });
 
+//frontend 
+Route::get('/', 'FrontendController@home')->name('mainpage');
 
-// Route::get('/', 'FrontendController@home')->name('mainpage');
+Route::get('about', 'FrontendController@about')->name('aboutpage');
 
-// Route::get('calculate','FrontendController@calculate')->name('calculatepage');
+Route::get('calculate','FrontendController@calculate')->name('calculatepage');
 
-// Route::get('signin','FrontendController@signin')->name('signinpage');
+Route::get('signin','FrontendController@signin')->name('signinpage');

@@ -6,13 +6,23 @@ use Illuminate\Http\Request;
 
 class FrontendController extends Controller
 {
-    public function calculate($value='')
+	public function home($value='')
     {
-    	return view('frontend.calculatepage');
+    	return view('frontend.mainpage');
     }
 
-    public function signin($value='')
+    public function about($value='')
     {
-    	return view('frontend.signinpage');
+    	return view('frontend.about');
     }
+
+    public function calculate($value='')
+    {
+    	return view('frontend.calculate');
+    }
+
+   	public function signin($value='')
+  	{
+    return view('frontend.signinpage');
+ 	}
 }
