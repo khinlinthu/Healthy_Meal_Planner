@@ -13,10 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('frontend.calculate');
+Route::get('/', function () {
+    return view('frontend.calculate');
 
-// });
+});
 
 //frontend 
 Route::get('/', 'FrontendController@home')->name('mainpage');
