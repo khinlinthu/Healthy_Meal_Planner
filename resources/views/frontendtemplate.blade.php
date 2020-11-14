@@ -138,16 +138,16 @@
                             <h3>PHOTO <span>STREAM</span></h3>
                             <ul>
                                 <li>
-                                    <a href="#"><img src="images/photo/photo-1.jpg" alt=""></a>
+                                    <a href="#"><img src="{{asset('frontend_asset/images/photo/photo-1.jpg')}}" alt=""></a>
                                 </li>
                                 <li>
-                                    <a href="#"><img src="images/photo/photo-2.jpg" alt=""></a>
+                                    <a href="#"><img src="{{asset('frontend_asset/images/photo/photo-2.jpg')}}" alt=""></a>
                                 </li>
                                 <li>
-                                    <a href="#"><img src="images/photo/photo-3.jpg" alt=""></a>
+                                    <a href="#"><img src="{{asset('frontend_asset/images/photo/photo-3.jpg')}}" alt=""></a>
                                 </li>
                                 <li>
-                                    <a href="#"><img src="images/photo/photo-4.jpg" alt=""></a>
+                                    <a href="#"><img src="{{asset('frontend_asset/images/photo/photo-4.jpg')}}" alt=""></a>
                                 </li>
                             </ul>
                         </div>

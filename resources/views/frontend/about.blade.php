@@ -5,7 +5,7 @@
 <!--
     about-us start
     ============================== -->
-    <section id="about-us">
+   {{--  <section id="about-us"> --}}
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -18,6 +18,6 @@
                 </div><!-- .col-md-12 close -->
             </div><!-- .row close -->
         </div><!-- .containe close -->
-    </section><!-- #call-to-action close -->
+    {{-- </section> --}}<!-- #call-to-action close -->
 
 @endsection

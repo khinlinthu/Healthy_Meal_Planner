@@ -26,3 +26,9 @@ Route::get('about', 'FrontendController@about')->name('aboutpage');
 Route::get('calculate','FrontendController@calculate')->name('calculatepage');
 
 Route::get('signin','FrontendController@signin')->name('signinpage');
+
+Route::resource('user','UserController');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
