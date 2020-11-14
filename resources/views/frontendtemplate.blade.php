@@ -70,9 +70,9 @@
                               <ul class="nav navbar-nav navbar-right" id="top-nav">
                                 <li><a href="#hero-area">Home</a></li>
                                 <li><a href="#about-us">about us</a></li>
-                                <li><a href="#blog">Blog</a></li>
+                                <li><a href="{{route('calculatepage')}}">Calculate</a></li>
                                 <li><a href="#price">Cart</a></li>
-                                <li><a href="#subscribe">Signin</a></li>
+                                <li><a href="">Signin</a></li>
                                 <li><a href="#contact-us">contacts</a></li>
                               </ul>
                             </div><!-- /.navbar-collapse -->

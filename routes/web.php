@@ -14,7 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('frontend.signinpage');
+    return view('frontend.calculate');
+
 });
 
+
 // Route::get('/', 'FrontendController@home')->name('mainpage');
+
+// Route::get('calculate','FrontendController@calculate')->name('calculatepage');
+
+// Route::get('signin','FrontendController@signin')->name('signinpage');
