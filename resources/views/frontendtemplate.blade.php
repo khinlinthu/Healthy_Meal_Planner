@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>Restaurant One Page HTML5 Template</title>
+		<title>Healthy Meal Planner</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- CSS
@@ -68,12 +68,12 @@
                             <!-- Collect the nav links, forms, and other content for toggling -->
                             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                               <ul class="nav navbar-nav navbar-right" id="top-nav">
-                                <li><a href="#hero-area">Home</a></li>
-                                <li><a href="#about-us">about us</a></li>
-                                <li><a href="{{route('calculatepage')}}">Calculate</a></li>
-                                <li><a href="#price">Cart</a></li>
-                                <li><a href="">Signin</a></li>
-                                <li><a href="#contact-us">contacts</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{route('mainpage')}}">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{route('aboutpage')}}">about us</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{route('calculatepage')}}">Calculate</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#price">Cart</a></li>
+                                <li class="nav-item"><a  class="nav-link"href="{{route('signinpage')}}">Signin</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#contact-us">contacts</a></li>
                               </ul>
                             </div><!-- /.navbar-collapse -->
                           </div><!-- /.container-fluid -->
