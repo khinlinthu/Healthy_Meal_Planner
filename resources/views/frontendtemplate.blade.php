@@ -30,6 +30,7 @@
     <script src="{{asset('frontend_asset/js/plugins.js')}}"></script>
     <script src="{{asset('frontend_asset/js/wow.min.js')}}"></script>
     <script src="{{asset('frontend_asset/js/main.js')}}"></script>
+    <script src="{{asset('frontend_asset/js/jquery.min.js')}}"></script>
 
 
     <link rel="stylesheet" type="text/css" href="{{asset('my_asset/css/style.css')}}">
@@ -70,7 +71,7 @@
                               <ul class="nav navbar-nav navbar-right" id="top-nav">
                                 <li><a href="#hero-area">Home</a></li>
                                 <li><a href="#about-us">about us</a></li>
-                                <li><a href="{{route('calculatepage')}}">Calculate</a></li>
+                                <li><a href="">Calculate</a></li>
                                 <li><a href="#price">Cart</a></li>
                                 <li><a href="">Signin</a></li>
                                 <li><a href="#contact-us">contacts</a></li>
@@ -196,5 +197,8 @@
             </div>
         </div>
     </footer>
+
+     @yield('script')
 	</body>
 </html>
+
