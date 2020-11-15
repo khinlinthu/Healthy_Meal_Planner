@@ -97,10 +97,11 @@
       </div>
       <ul class="app-menu">
         <li><a class="app-menu__item" href="dashboard.html"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">Dashboard</span></a></li>
-        {{-- <li><a class="app-menu__item " href=""><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">Brands</span></a></li>
+     <!--    {{-- <li><a class="app-menu__item " href=""><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">Brands</span></a></li>
         <li><a class="app-menu__item " href=""><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">Categories</span></a></li>
-        <li><a class="app-menu__item " href=""><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">Subcategories</span></a></li> --}}
-        <li><a class="app-menu__item " href=""><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">Food Package</span></a></li>
+        <li><a class="app-menu__item " href=""><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">Subcategories</span></a></li> --}} -->
+        
+        <li><a class="app-menu__item " href="{{route('foodpackage.index')}}"><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">Food Package</span></a></li>
         <li><a class="app-menu__item " href=""><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">Orders</span></a></li>
                 
             </ul>

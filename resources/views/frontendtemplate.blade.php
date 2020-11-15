@@ -152,6 +152,7 @@
                         <div class="gallary">
                             <h3>PHOTO <span>STREAM</span></h3>
                             <ul>
+
                                 <li>
                                     <a href="#"><img src="{{asset('frontend_asset/images/photo/photo-1.jpg')}}" alt=""></a>
                                 </li>
@@ -162,9 +163,11 @@
                                     <a href="#"><img src="{{asset('frontend_asset/images/photo/photo-3.jpg')}}" alt=""></a>
                                 </li>
                                 <li>
+                                    <a href="#"><img src="images/photo/photo-4.jpg" alt=""></a>
+                                </li> 
                                     <a href="#"><img src="{{asset('frontend_asset/images/photo/photo-4.jpg')}}" alt=""></a>
-                                </li>
-                            </ul>
+                                </li> 
+                          </ul>
                         </div>
                         <div class="social-media-link">
                             <h3>Follow <span>US</span></h3>
