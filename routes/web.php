@@ -26,3 +26,7 @@ Route::get('about', 'FrontendController@about')->name('aboutpage');
 Route::get('calculate','FrontendController@calculate')->name('calculatepage');
 
 Route::get('signin','FrontendController@signin')->name('signinpage');
+
+
+// Route::resource('foodpackage','FoodpackageController');
+// Route::resource('userdetail','UserdetailController');

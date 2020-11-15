@@ -165,7 +165,18 @@
                 calories=calories+500;
               }
 
+           
+             // CalForone = calories/3;
+
+              // for(let i= 0; i<CalForone; i++)
+              // {
+              //   console.log(CalForone[i]);
+              // }
+
+
+
               alert(calories + " calories");
+              // alert(CalForone);
 
            })
        
