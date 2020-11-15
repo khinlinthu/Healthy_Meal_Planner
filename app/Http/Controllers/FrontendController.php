@@ -26,5 +26,9 @@ class FrontendController extends Controller
     return view('frontend.signinpage');
  	}
 
+    public function contact($value='')
+    {
+    return view('frontend.contact');
+    }
  	
 }

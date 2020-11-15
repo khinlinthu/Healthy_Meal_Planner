@@ -70,12 +70,24 @@
                             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                               <ul class="nav navbar-nav navbar-right" id="top-nav">
 
-                                <li class="nav-item"><a class="nav-link" href="{{route('mainpage')}}">Home</a></li>
-                                <li class="nav-item"><a class="nav-link" href="{{route('aboutpage')}}">about us</a></li>
-                                <li class="nav-item"><a class="nav-link" href="{{route('calculatepage')}}">Calculate</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#price">Cart</a></li>
-                                <li class="nav-item"><a  class="nav-link"href="{{route('signinpage')}}">Signin</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#contact-us">contacts</a></li>
+                                <li>
+                                    <a href="{{route('mainpage')}}">Home</a>
+                                </li>
+                                <li>
+                                    <a href="{{route('aboutpage')}}">about us</a>
+                                </li>
+                                <li>
+                                    <a href="{{route('calculatepage')}}">Calculate</a>
+                                </li>
+                                <li>
+                                    <a href="#price">Cart</a>
+                                </li>
+                                <li>
+                                    <a href="{{route('signinpage')}}">Signin</a>
+                                </li>
+                                <li>
+                                    <a href="{{route('contactpage')}}">contacts</a>
+                                </li>
 
                               </ul>
                             </div><!-- /.navbar-collapse -->

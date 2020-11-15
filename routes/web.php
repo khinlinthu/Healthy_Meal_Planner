@@ -27,6 +27,8 @@ Route::get('calculate','FrontendController@calculate')->name('calculatepage');
 
 Route::get('signin','FrontendController@signin')->name('signinpage');
 
+Route::get('contact','FrontendController@contact')->name('contactpage');
+
 Route::resource('user','UserController');
 
 Auth::routes();
