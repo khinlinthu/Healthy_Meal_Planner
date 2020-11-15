@@ -69,21 +69,14 @@
                             <!-- Collect the nav links, forms, and other content for toggling -->
                             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                               <ul class="nav navbar-nav navbar-right" id="top-nav">
-<<<<<<< HEAD
-                                <li><a href="#hero-area">Home</a></li>
-                                <li><a href="#about-us">about us</a></li>
-                                <li><a href="">Calculate</a></li>
-                                <li><a href="#price">Cart</a></li>
-                                <li><a href="">Signin</a></li>
-                                <li><a href="#contact-us">contacts</a></li>
-=======
+
                                 <li class="nav-item"><a class="nav-link" href="{{route('mainpage')}}">Home</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{{route('aboutpage')}}">about us</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{{route('calculatepage')}}">Calculate</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#price">Cart</a></li>
                                 <li class="nav-item"><a  class="nav-link"href="{{route('signinpage')}}">Signin</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#contact-us">contacts</a></li>
->>>>>>> 6c49fbd36887ce69b406f5ba4f21f62aee64ba4d
+
                               </ul>
                             </div><!-- /.navbar-collapse -->
                           </div><!-- /.container-fluid -->
