@@ -41,5 +41,9 @@ class FrontendController extends Controller
        ]);
     }
 
+    public function contact($value='')
+    {
+    return view('frontend.contact');
+    }
  	
 }

@@ -72,12 +72,33 @@
                             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                               <ul class="nav navbar-nav navbar-right" id="top-nav">
 
+<<<<<<< HEAD
                                 <li class="nav-item"><a class="nav-link" href="{{route('mainpage')}}">Home</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{{route('aboutpage')}}">about us</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{{route('calculatepage')}}">Calculate</a></li>
 
                                 <li class="nav-item"><a  class="nav-link"href="{{route('signinpage')}}">Signin</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#contact-us">contacts</a></li>
+=======
+                                <li>
+                                    <a href="{{route('mainpage')}}">Home</a>
+                                </li>
+                                <li>
+                                    <a href="{{route('aboutpage')}}">about us</a>
+                                </li>
+                                <li>
+                                    <a href="{{route('calculatepage')}}">Calculate</a>
+                                </li>
+                                <li>
+                                    <a href="#price">Cart</a>
+                                </li>
+                                <li>
+                                    <a href="{{route('signinpage')}}">Signin</a>
+                                </li>
+                                <li>
+                                    <a href="{{route('contactpage')}}">contacts</a>
+                                </li>
+>>>>>>> 1f4daa4094742915d5f186d876ac0b9c4e023906
 
                               </ul>
                             </div><!-- /.navbar-collapse -->
@@ -142,12 +163,18 @@
                         <div class="gallary">
                             <h3>PHOTO <span>STREAM</span></h3>
                             <ul>
+<<<<<<< HEAD
                                 <!-- <li>
                                     <a href="#"><img src="images/photo/photo-1.jpg" alt=""></a>
 
                                 <li>
                                     <a href="#"><img src="{{asset('frontend_asset/images/photo/photo-1.jpg')}}" alt=""></a>
 
+=======
+
+                                <li>
+                                    <a href="#"><img src="{{asset('frontend_asset/images/photo/photo-1.jpg')}}" alt=""></a>
+>>>>>>> 1f4daa4094742915d5f186d876ac0b9c4e023906
                                 </li>
                                 <li>
                                     <a href="#"><img src="{{asset('frontend_asset/images/photo/photo-2.jpg')}}" alt=""></a>
@@ -156,6 +183,7 @@
                                     <a href="#"><img src="{{asset('frontend_asset/images/photo/photo-3.jpg')}}" alt=""></a>
                                 </li>
                                 <li>
+<<<<<<< HEAD
 
                                     <a href="#"><img src="images/photo/photo-4.jpg" alt=""></a>
                                 </li> -->
@@ -163,6 +191,13 @@
                                 </li>
 
                             </ul>
+=======
+                                    <a href="#"><img src="images/photo/photo-4.jpg" alt=""></a>
+                                </li> 
+                                    <a href="#"><img src="{{asset('frontend_asset/images/photo/photo-4.jpg')}}" alt=""></a>
+                                </li> 
+                          </ul>
+>>>>>>> 1f4daa4094742915d5f186d876ac0b9c4e023906
                         </div>
                         <div class="social-media-link">
                             <h3>Follow <span>US</span></h3>
