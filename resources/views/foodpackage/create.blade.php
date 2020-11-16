@@ -70,7 +70,7 @@
 		              </select>
 		            </div>
 		            <div class="form-group">
-		              <label>Weight-target</label>
+		              <label>Type</label>
 		              <select name="type" class="form-control subcategory" >
 		                <option>Breakfast</option>
 		                <option>Lunch</option>

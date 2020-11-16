@@ -100,7 +100,7 @@
 
         
         <li><a class="app-menu__item " href="{{route('foodpackage.index')}}"><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">Food Package</span></a></li>
-        <li><a class="app-menu__item " href=""><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">Orders</span></a></li>
+        <li><a class="app-menu__item " href="{{route('order.index')}}"><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">Orders</span></a></li>
                 
             </ul>
     </aside>

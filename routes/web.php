@@ -35,7 +35,11 @@ Route::resource('userdetail','UserdetailController');
 
 Route::resource('user','UserController');
 
+Route::resource('order', 'OrderController');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::post('getfoodpackage','FrontendController@getFoodPackages')->name('getfoodpackage');
 
