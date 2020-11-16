@@ -45,5 +45,11 @@ class FrontendController extends Controller
     {
     return view('frontend.contact');
     }
+
+    public function cart($value='')
+    {
+    return view('frontend.cartpage');
+    }
+    
  	
 }

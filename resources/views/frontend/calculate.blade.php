@@ -154,7 +154,7 @@
                   </div>
 
                  <button class="btn btn-warning mt-1 addtocart">
-                  <a href="{{route('calculatepage')}}">Order</a></button>
+                  <a href="{{route('cartpage')}}">Order</a></button>
                </div>
             </form>
           </div>

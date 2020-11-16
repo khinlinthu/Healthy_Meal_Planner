@@ -27,22 +27,15 @@ Route::get('calculate','FrontendController@calculate')->name('calculatepage');
 
 Route::get('signin','FrontendController@signin')->name('signinpage');
 
-<<<<<<< HEAD
+
 
 Route::resource('foodpackage','FoodpackageController');
 Route::resource('userdetail','UserdetailController');
-=======
-<<<<<<< HEAD
+
 Route::get('contact','FrontendController@contact')->name('contactpage');
+Route::get('cartpage','FrontendController@cart')->name('cartpage');
 
-=======
-<<<<<<< HEAD
 
-// Route::resource('foodpackage','FoodpackageController');
-// Route::resource('userdetail','UserdetailController');
-=======
->>>>>>> dc310ea59c09352161b2ba4d09a00871f59f9553
->>>>>>> 1f4daa4094742915d5f186d876ac0b9c4e023906
 Route::resource('user','UserController');
 
 Auth::routes();
