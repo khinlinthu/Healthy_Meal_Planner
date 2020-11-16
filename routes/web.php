@@ -27,14 +27,13 @@ Route::get('calculate','FrontendController@calculate')->name('calculatepage');
 
 Route::get('signin','FrontendController@signin')->name('signinpage');
 
-<<<<<<< HEAD
 
-// Route::resource('foodpackage','FoodpackageController');
-// Route::resource('userdetail','UserdetailController');
-=======
+Route::resource('foodpackage','FoodpackageController');
+Route::resource('userdetail','UserdetailController');
 Route::resource('user','UserController');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
->>>>>>> 600e0dcc05991a7f942166630e2818eebd2dafde
+
+Route::post('getfoodpackage','FrontendController@getFoodPackages')->name('getfoodpackage');

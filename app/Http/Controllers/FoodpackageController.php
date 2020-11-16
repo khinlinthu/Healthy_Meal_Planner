@@ -84,7 +84,7 @@ class FoodpackageController extends Controller
      */
     public function edit(Foodpackage $foodpackage)
     {
-        //
+        return view('foodpackage.edit',compact('foodpackage'));
     }
 
     /**
@@ -96,7 +96,30 @@ class FoodpackageController extends Controller
      */
     public function update(Request $request, Foodpackage $foodpackage)
     {
-        //
+        // dd($request);
+          $request->validate([
+            "foodpackages"=>"required",
+            "totalCalories"=>"required",
+            "price"=>"required",
+            "discount"=>"sometimes|required",
+            "weight_target"=>"required",
+            "type"=>"required"
+            
+        ]);
+
+        $foodpackage->foodpackages =$request->foodpackages;
+        $foodpackage->totalCalories = $request->totalCalories; 
+        $foodpackage->price = $request->price;
+        $foodpackage->discount = $request->discount;
+        $foodpackage->weight_target=$request->weight_target;
+        $foodpackage->type = $request->type;
+
+        // dd($foodpackage);
+        $foodpackage->save();
+
+
+
+        return redirect()->route('foodpackage.index');
     }
 
     /**
@@ -107,6 +130,8 @@ class FoodpackageController extends Controller
      */
     public function destroy(Foodpackage $foodpackage)
     {
-        //
+         $foodpackage->delete();
+
+        return redirect()->route('foodpackage.index');
     }
 }
