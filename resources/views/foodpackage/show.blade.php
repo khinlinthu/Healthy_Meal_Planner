@@ -20,14 +20,14 @@
           <div class="card my-3">
             <div class="row no-gutters">
              <!--  <div class="col-md-4">
-                <img src="{{asset($item->photo)}}" class="card-img" alt="...">
+                <img src="" class="card-img" alt="...">
               </div> -->
               <div class="col-md-8">
                 <div class="card-body">
-                  <h5 class="card-title">{{$item->name}} ({{$item->codeno}})</h5>
-                  <p class="card-text">{{number_format($item->price)}} MMK</p>
-                  <p class="card-text">{{$item->brand->name}}</p>
-                  <p class="card-text">{{$item->subcategory->name}}</p>
+                  <h5 class="card-title">{{$foodpackage->foodpackages}}</h5>
+                  <p class="card-text">{{number_format($foodpackage->price)}} MMK</p>
+                  <p class="card-text">{{$foodpackage->totalCalories}}</p>
+                  {{-- <p class="card-text">{{$item->subcategory->name}}</p> --}}
 
                   <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                 </div>

@@ -63,7 +63,7 @@
 
 					<div class="form-group">
 		              <label>Weight-target</label>
-		              <select name="weight-target" class="form-control subcategory" >
+		              <select name="weight_target" class="form-control subcategory" >
 		                <option>Weight-loss</option>
 		                <option>Weight-gain</option>
 		                <option>Current-weight</option>

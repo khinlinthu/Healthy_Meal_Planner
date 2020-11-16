@@ -14,7 +14,7 @@
     <meta property="og:url" content="http://pratikborsadiya.in/blog/vali-admin">
     <meta property="og:image" content="http://pratikborsadiya.in/blog/vali-admin/hero-social.png">
     <meta property="og:description" content="Vali is a responsive and free admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.">
-    <title>Blank Page - Vali Admin</title>
+    <title>Healthy Meal Planner Backend</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -97,9 +97,7 @@
       </div>
       <ul class="app-menu">
         <li><a class="app-menu__item" href="dashboard.html"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">Dashboard</span></a></li>
-     <!--    {{-- <li><a class="app-menu__item " href=""><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">Brands</span></a></li>
-        <li><a class="app-menu__item " href=""><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">Categories</span></a></li>
-        <li><a class="app-menu__item " href=""><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">Subcategories</span></a></li> --}} -->
+
         
         <li><a class="app-menu__item " href="{{route('foodpackage.index')}}"><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">Food Package</span></a></li>
         <li><a class="app-menu__item " href=""><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">Orders</span></a></li>
