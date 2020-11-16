@@ -29,15 +29,25 @@ Route::get('signin','FrontendController@signin')->name('signinpage');
 
 Route::get('contact','FrontendController@contact')->name('contactpage');
 
+Route::get('cartpage','FrontendController@cart')->name('cartpage');
+
+
 //backend
+Route::middleware('role:admin')->group(function () {
 Route::resource('foodpackage','FoodpackageController');
+
+});
+
 Route::resource('userdetail','UserdetailController');
+
 
 Route::resource('user','UserController');
 
 Route::resource('order', 'OrderController');
 
-Auth::routes();
+Route::post('confirm/{id}', 'OrderController@confirm')->name('order.confirm');
+
+Auth::routes(['register'=>false]);
 
 Route::get('/home', 'HomeController@index')->name('home');
 

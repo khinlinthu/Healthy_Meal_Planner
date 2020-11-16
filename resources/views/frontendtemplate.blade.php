@@ -21,6 +21,9 @@
 		<link rel="stylesheet" href="{{asset('frontend_asset/css/main.css')}}">
         <!-- Responsive Stylesheet -->
 		<link rel="stylesheet" href="{{asset('frontend_asset/css/responsive.css')}}">
+
+        <link rel="stylesheet" type="text/css" href="{{ asset('my_asset/fontawesome/css/all.min.css')}}">
+        
 		<!-- Js -->
     <script src="{{asset('frontend_asset/js/vendor/modernizr-2.6.2.min.js')}}"></script>
     <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
@@ -76,9 +79,37 @@
                                 <li class="nav-item"><a class="nav-link" href="{{route('mainpage')}}">Home</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{{route('aboutpage')}}">about us</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{{route('calculatepage')}}">Calculate</a></li>
+                                 <li class="nav-item"><a class="nav-link" href="{{route('cartpage')}}">Checkout</a></li>
 
-                                <li class="nav-item"><a  class="nav-link"href="{{route('signinpage')}}">Signin</a></li>
+                                @auth
+                                  <li class="nav-item dropdown">
+                                      <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                          {{ Auth::user()->name }}
+                                      </a>
+
+                                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                          <a class="dropdown-item" href="{{ route('logout') }}"
+                                             onclick="event.preventDefault();
+                                                           document.getElementById('logout-form').submit();">
+                                              {{ __('Logout') }}
+                                          </a>
+
+                                          <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                              @csrf
+                                          </form>
+                                      </div>
+                                  </li>
+                                  @else
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="{{route('signinpage')}}">Signin</a>
+                                  </li>
+                                
+                                  @endauth
+
                                 <li class="nav-item"><a class="nav-link" href="{{route('contactpage')}}">contacts</a></li>
+
+                           
+
 
                               </ul>
                             </div><!-- /.navbar-collapse -->
@@ -143,7 +174,15 @@
                         <div class="gallary">
                             <h3>PHOTO <span>STREAM</span></h3>
                             <ul>
+<<<<<<< HEAD
                                <li>
+=======
+
+                                <!-- <li>
+                                    <a href="#"><img src="images/photo/photo-1.jpg" alt=""></a>
+
+                                <li>
+>>>>>>> 34010927df662c956ec752b39d7a2169f3815945
                                     <a href="#"><img src="{{asset('frontend_asset/images/photo/photo-1.jpg')}}" alt=""></a>
                                 </li>
 
@@ -157,6 +196,16 @@
                                     <a href="#"><img src="{{asset('frontend_asset/images/photo/photo-3.jpg')}}" alt=""></a>
                                 </li>
                             </ul>
+<<<<<<< HEAD
+=======
+
+                                    <a href="#"><img src="images/photo/photo-4.jpg" alt=""></a>
+                                </li> 
+                                    <a href="#"><img src="{{asset('frontend_asset/images/photo/photo-4.jpg')}}" alt=""></a>
+                                </li> 
+                          </ul>
+
+>>>>>>> 34010927df662c956ec752b39d7a2169f3815945
                         </div>
                         <div class="social-media-link">
                             <h3>Follow <span>US</span></h3>

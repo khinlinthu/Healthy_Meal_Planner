@@ -94,7 +94,7 @@
 
         <div class="row justify-content-center">
           <div class="col-md-12" style="padding-left: 300px;">
-            <form method="post" action="">
+            <form method="" action="">
                <div class="row">
                   <div class="col-md-4 breakfast">
                     <div class="tile">
@@ -107,6 +107,7 @@
                               <p class="card-text" id="priceb"></p>
                               <p class="card-text" id="breakfast"></p>
                               <p class="card-text" id="typeb"></p>
+                              <p class="card-text" id="idb"></p>
                             </div>
                           </div>
                         </div>
@@ -127,6 +128,7 @@
                                 <p class="card-text" id="pricel"></p>
                                 <p class="card-text" id="lunch"></p>
                                 <p class="card-text" id="typel"></p>
+                                <p class="card-text" id="idl"></p>
                               </div>
                             </div>
                           </div>
@@ -146,6 +148,7 @@
                               <p class="card-text" id="priced"></p>
                               <p class="card-text" id="dinner"></p>
                               <p class="card-text" id="typed"></p>
+                              <p class="card-text" id="idd"></p>
                             </div>
                           </div>
                         </div>
@@ -154,7 +157,7 @@
                   </div>
 
                  <button class="btn btn-warning mt-1 addtocart">
-                  <a href="{{route('calculatepage')}}">Order</a></button>
+                  <a href="{{route('cartpage')}}">Order</a></button>
                </div>
             </form>
           </div>
@@ -162,7 +165,7 @@
     </div>
 
 
-  <div class="order">         
+  {{-- <div class="order">         
   <div class="jumbotron jumbotron-fluid subtitle">
       <div class="container">
         <h1 class="text-center text-white"> Order Received </h1>
@@ -187,7 +190,7 @@
 
     </div>
   </div>
-  </div>
+  </div> --}}
 
 @endsection
 
@@ -280,6 +283,10 @@
               $.post("{{route('getfoodpackage')}}",{w_target:w_target},function (response) {
                     console.log(Number(response.Breakfast.totalCalories));
 
+                    var idb = Number(response.Breakfast.id);
+                    var idl = Number(response.Lunch.id);
+                    var idd = Number(response.Dinner.id);
+
                     var codenob = response.Breakfast.codeno;
                     var codenol = response.Lunch.codeno;
                     var codenod = response.Dinner.codeno;
@@ -313,20 +320,24 @@
                    $('#foodpackagesb').html(foodpackagesb);
                    $('#priceb').html(priceb);
                    $('#breakfast').html(breakfast);
-                   $('#typeb').html(typeb)
+                   $('#typeb').html(typeb);
+                   $('#idb').html(idb);
+
 
                    $('#codenol').html(codenol);
                    $('#foodpackagesl').html(foodpackagesl);
                    $('#pricel').html(pricel);
                    $('#lunch').html(lunch);
-                   $('#typel').html(typel)
+                   $('#typel').html(typel);
+                   $('#idl').html(idl);
                 
 
                    $('#codenod').html(codenod);
                    $('#foodpackagesd').html(foodpackagesd);
                    $('#priced').html(priced);
                    $('#dinner').html(dinner);
-                   $('#typed').html(typed)
+                   $('#typed').html(typed);
+                   $('#idd').html(idd);
                 
                 
 

@@ -74,6 +74,7 @@
                     <td>{{$row->user->name}}</td>
                     <td>
                       <a href="{{route('order.show',$row->id)}}" class="btn btn-primary">Detail</a>
+                      
                       <form method="post" action="{{route('order.destroy',$row->id)}}" class="d-inline-block" onsubmit="return confirm('Are you Sure to Delete?')">
                     @csrf
                     @method('DELETE')
