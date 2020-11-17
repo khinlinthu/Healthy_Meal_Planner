@@ -16,20 +16,24 @@
       <div class="col-md-12">
         <div class="tile">
           <h2>Foodpackages Detail</h2>
-
+            <div class="col-2" style="margin-left: 850px;margin-top:-35px;display: inline-block;">
+          <a href="{{route('foodpackage.index')}}" class="btn btn-outline-primary btn-block float-right"> 
+                  <i class="fa fa-backward pr-2"></i> Go Back 
+                </a>
+        </div>
           <div class="card my-3">
             <div class="row no-gutters">
 
               <div class="col-md-8">
                 <div class="card-body">
                   <h5 class="card-title">{{$foodpackage->foodpackages}} ({{$foodpackage->codeno}})</h5>
-                  <p class="card-text">{{number_format($foodpackage->price)}} MMK</p>
-                  <p class="card-text">{{$foodpackage->totalCalories}}</p>
-                  <p class="card-text">{{$foodpackage->weight_target}}</p>
-                  <p class="card-text">{{$foodpackage->type}}</p>
+                  <p class="card-text">Type - {{$foodpackage->type}}</p>
 
-
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  <p class="card-text">Price - {{number_format($foodpackage->price)}} MMK</p>
+                  <p class="card-text">WeightTarget - {{$foodpackage->weight_target}}</p>
+                  <p class="card-text">Calories per g - {{$foodpackage->totalCalories}} per 1 g</p>
+                  
+                 
                 </div>
               </div>
             </div>

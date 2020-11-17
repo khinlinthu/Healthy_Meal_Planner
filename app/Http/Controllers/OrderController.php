@@ -123,4 +123,9 @@ class OrderController extends Controller
         $order->save();
         return back();
     }
+
+    public function back($value='')
+    {
+        return redirect()->route('order.index');
+    }
 }

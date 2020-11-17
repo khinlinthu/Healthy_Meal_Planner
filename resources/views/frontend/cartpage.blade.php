@@ -28,10 +28,19 @@
         <table class="table">
           <thead>
             <tr>
+
+         <!--      <th colspan="2"> Breakfast</th>
+              <th colspan="2"> Lunch</th>
+              <th colspan="2">Dinner</th>
+              <th>Price</th>
+              <th>Qty</th>
+              <th>Subotal</th> -->
+
               <th colspan="2"> FoodPackages</th>
               <th colspan="3"> Qty</th>
               <th>Price</th>
               <th>Subtotal</th>
+
             </tr>
           </thead>
           <tbody id="shoppingcart_table">

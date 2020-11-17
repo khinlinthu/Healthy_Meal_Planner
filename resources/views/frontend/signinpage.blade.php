@@ -72,6 +72,17 @@
                         </span>
                     @enderror
 				</div>
+				<div class="group">
+					<label for="email" class="label">Email</label>
+					<input id="pass" type="text" class="input @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+
+					@error('email')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror
+				</div>
+				
 
 				<div class="group">
 					<label for="password" class="label">Password</label>
@@ -89,16 +100,6 @@
 					<input id="pass" type="password" class="input" data-type="password" name="password_confirmation">
 				</div>
 
-				<div class="group">
-					<label for="email" class="label">Email</label>
-					<input id="pass" type="text" class="input @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
-
-					@error('email')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                    @enderror
-				</div>
 				
 				<div class="group">
 					<input type="submit" class="button" value="Sign Up">

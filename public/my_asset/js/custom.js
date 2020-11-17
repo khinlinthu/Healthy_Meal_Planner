@@ -21,33 +21,42 @@
 
                     var ftotal = priceb + pricel + priced ;
 
+                    alert(foodpackagesd);
+                    // alert(priced);
+                    // alert(typed);
+
                     var qty =1;
 
 
                    alert(typed);
+
                    
                                     
                     var item = {
-                                    foodpackagesb : foodpackagesb ,
-                                    priceb : priceb ,
-                                    typeb : typeb , 
-                                    idb : idb , 
-                                    foodpackagesl : foodpackagesl ,
-                                    pricel : pricel ,   
-                                    typel : typel ,
-                                    idl : idl ,
-                                    foodpackagesd : foodpackagesd ,
-                                    priced : priced ,   
-                                    typed : typed ,
-                                    idd : idd ,
-                                    ftotal : ftotal ,
-                                    qty : qty 
-                                };
 
-                    // console.log(item);
+                            foodpackagesb : foodpackagesb ,
+                            priceb : priceb ,
+                            typeb : typeb , 
+                            idb : idb , 
+                            foodpackagesl : foodpackagesl ,
+                            pricel : pricel ,   
+                            typel : typel ,
+                            idl : idl ,
+                            foodpackagesd : foodpackagesd ,
+                            priced : priced ,   
+                            typed : typed ,
+                            idd : idd ,
+                            ftotal : ftotal ,
+                            qty : qty 
+                            
+                      
+                    };
+
+                    console.log(item);
 
                     var itemlists = localStorage.getItem("foodpackage");
                     // console.log(itemlists);
+
                         var itemarray;
                         if (itemlists == null) {
                             itemarray = [];
@@ -69,6 +78,7 @@
                         localStorage.setItem("foodpackage", string);
                         
                         showdata();
+
                 })
           
                         function showdata(){
@@ -131,7 +141,6 @@
                 var string = JSON.stringify(itemarray);
                 localStorage.setItem("foodpackage",string);
                 showdata();
-                
 
             })
             
@@ -147,10 +156,11 @@
                         var string = JSON.stringify(itemarray);
                         localStorage.setItem("foodpackage", string);
                         showdata();
-                       
-                    })
+
+             
                                 
             })
+        })
             $("tbody").on("click", ".minus-btn",function(){
                
                 var id = $(this).data('id');
@@ -167,6 +177,7 @@
                         var string = JSON.stringify(itemarray);
                         localStorage.setItem("foodpackage", string);
                         showdata();
+
                     });
       
             });
