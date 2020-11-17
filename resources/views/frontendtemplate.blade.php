@@ -21,6 +21,9 @@
 		<link rel="stylesheet" href="{{asset('frontend_asset/css/main.css')}}">
         <!-- Responsive Stylesheet -->
 		<link rel="stylesheet" href="{{asset('frontend_asset/css/responsive.css')}}">
+
+        <link rel="stylesheet" type="text/css" href="{{ asset('my_asset/fontawesome/css/all.min.css')}}">
+        
 		<!-- Js -->
     <script src="{{asset('frontend_asset/js/vendor/modernizr-2.6.2.min.js')}}"></script>
     <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
@@ -78,8 +81,32 @@
                                 <li class="nav-item"><a class="nav-link" href="{{route('calculatepage')}}">Calculate</a></li>
                                  <li class="nav-item"><a class="nav-link" href="{{route('cartpage')}}">Checkout</a></li>
 
-                                <li class="nav-item"><a  class="nav-link"href="{{route('signinpage')}}">Signin</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#contact-us">contacts</a></li>
+                                @auth
+                                  <li class="nav-item dropdown">
+                                      <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                          {{ Auth::user()->name }}
+                                      </a>
+
+                                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                          <a class="dropdown-item" href="{{ route('logout') }}"
+                                             onclick="event.preventDefault();
+                                                           document.getElementById('logout-form').submit();">
+                                              {{ __('Logout') }}
+                                          </a>
+
+                                          <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                              @csrf
+                                          </form>
+                                      </div>
+                                  </li>
+                                  @else
+                                  <li class="nav-item">
+                                    <a class="nav-link" href="{{route('signinpage')}}">Signin</a>
+                                  </li>
+                                
+                                  @endauth
+
+                                <li class="nav-item"><a class="nav-link" href="{{route('contactpage')}}">contacts</a></li>
 
                            
 
@@ -97,7 +124,7 @@
 	@yield('content')
 
 
-	<section id="footer">
+    <section id="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -106,17 +133,17 @@
                         <div class="info">
                             <ul>
                                 <li>
-                                  <h4><i class="fa fa-phone"></i>Telefone</h4>
-                                  <p>(000) 123 456 78- (000) 123 4567 89</p>
+                                  <h4><i class="fa fa-phone"></i>TALK TO US</h4>
+                                  <p>0987654321</p>
                                     
                                 </li>
                                 <li>
-                                  <h4><i class="fa fa-map-marker"></i>Address</h4>
-                                  <p>2046 Blue Spruce Lane Laurel Canada</p>
+                                  <h4><i class="fa fa-map-marker"></i>LOCATION</h4>
+                                  <p>Yangon</p>
                                 </li>
                                 <li>
-                                  <h4><i class="fa fa-envelope"></i>E mail</h4>
-                                  <p>rest@gmail.com - rest@mail.ru</p>
+                                  <h4><i class="fa fa-envelope"></i>E_MAIL</h4>
+                                  <p>healthymealplanner@gmail.com</p>
                                   
                                 </li>
                             </ul>
@@ -126,16 +153,11 @@
                 <!-- .col-md-4 close -->
                 <div class="col-md-4">
                     <div class="block wow fadeInLeft"  data-wow-delay="700ms">
-                        <h3>LATEST <span>BLOG POSTS</span></h3>
+                        <h3>LATEST <span>Our Webiste</span></h3>
                         <div class="blog">
                             <ul>
                                 <li>
-                                    <h4><a href="#">Nov 9-2014</a></h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adip iscing elit. Curabitur ut blandit sapien</p>
-                                </li>
-                                <li>
-                                    <h4><a href="#">Sep 8-2014</a></h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adip iscing elit. Curabitur ut blandit sapien</p>
+                                    <p>Our Healthy Meal Planner will help you find the recipe that suits your personal needs.</p>
                                 </li>
                             </ul>                
                         </div>
@@ -222,7 +244,7 @@
             <div class="row">
                 <div class="col-md-12 col-sm-12">
                     <div class="block">
-                        <p>Copyright &copy; 2014 - All Rights Reserved.Design and Developed By <a href="http://www.themefisher.com">Themefisher</a></p>
+                        <p>Copyright &copy; 2020 - All Rights Reserved.Design and Developed By HealthyMealPlanner</p>
                     </div>
                 </div>
             </div>

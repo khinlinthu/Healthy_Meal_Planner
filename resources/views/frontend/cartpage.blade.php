@@ -21,17 +21,26 @@
       </div>
     </div>
 
+
+    <form method="" action="" class="checkout">
     <div class="row mt-5 shoppingcart_div">
       <div class="table-responsive">
         <table class="table">
           <thead>
             <tr>
+<<<<<<< HEAD
               <th colspan="2"> Breakfast</th>
               <th colspan="2"> Lunch</th>
               <th colspan="2">Dinner</th>
               <th>Price</th>
               <th>Qty</th>
               <th>Subotal</th>
+=======
+              <th colspan="2"> FoodPackages</th>
+              <th colspan="3"> Qty</th>
+              <th>Price</th>
+              <th>Subtotal</th>
+>>>>>>> fac6cc2c0b6ce756bf5e827c6dc990e0886148bb
             </tr>
           </thead>
           <tbody id="shoppingcart_table">
@@ -43,13 +52,19 @@
             
             <tr> 
               <td colspan="5"> 
-                <textarea class="form-control notes" placeholder="Any Request..."></textarea>
+                <textarea class="form-control notes" placeholder="Any Request..." required></textarea>
               </td>
               <td colspan="3">
                
-                <button class="btn btn-secondary btn-block mainfullbtncolor checkoutbtn"> 
+               @role('customer')
+                <button class="btn btn-secondary btn-block mainfullbtncolor"> 
                   Check Out 
                 </button>
+                @else
+                <button class="btn btn-secondary btn-block mainfullbtncolor"> <a href="{{route('signinpage')}}"></a>
+                   Please Signin 
+                </button>
+                @endrole
               </td>
 
             </tr>
@@ -58,7 +73,7 @@
       </div>
     </div>
 
-
+</form>
     
 
   </div>
@@ -68,5 +83,31 @@
 
 @section('script')
   <script type="text/javascript" src="{{asset('my_asset/js/custom.js')}}"></script>
+
+  <script type="text/javascript">
+    $.ajaxSetup({
+          headers: {
+              'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+          }
+      });
+
+    $(document).ready(function () {
+        $('.checkout').submit(function(e){
+          let notes = $('.notes').val();
+          if (notes === "") {
+            return true;
+          }else{
+            let order = localStorage.getItem('foodpackage'); // JSON String
+            console.log(order);
+            $.post("{{route('order.store')}}",{order:order,notes:notes},function (response) {
+              alert(response.msg);
+              // localStorage.clear();
+              // location.href="/";
+            })
+            e.preventDefault();
+          }
+        })
+      })
+    </script>
  
 @endsection

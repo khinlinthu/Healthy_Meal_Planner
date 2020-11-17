@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Order;
 use Illuminate\Http\Request;
+use Auth;
 
 class OrderController extends Controller
 {
@@ -14,7 +15,9 @@ class OrderController extends Controller
      */
     public function index()
     {
-        //
+        $pending_orders = Order::where('status',0)->get();
+        $confirmed_orders = Order::where('status',1)->get();
+        return view('order.index',compact('pending_orders','confirmed_orders'));
     }
 
     /**
@@ -35,7 +38,36 @@ class OrderController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // dd($request);
+
+        // validation
+
+        // data store
+        $myorder = json_decode($request->order);
+        $notes = $request->notes;
+        $orderdate = date('Y-m-d');
+        $totalamount = 0;
+        foreach ($myorder as $row) {
+            $totalamount += $row->ftotal*$row->qty;
+        }
+
+        $order = new Order;
+        $order->orderno = uniqid();
+        $order->orderdate = $orderdate;
+        $order->totalamount = $totalamount;
+        $order->notes = $notes;
+        $order->user_id = Auth::id(); // current logined user_id
+        // dd($notes);
+        $order->save();
+        
+        foreach ($myorder as $row) { 
+            $order->foodpackages()->attach($row->idb,['quantity'=>$row->qty]);
+            $order->foodpackages()->attach($row->idl,['quantity'=>$row->qty]);
+            $order->foodpackages()->attach($row->idd,['quantity'=>$row->qty]);
+        }
+
+        return response()
+            ->json(['msg' => 'Successful You Order!']);
     }
 
     /**
@@ -46,7 +78,7 @@ class OrderController extends Controller
      */
     public function show(Order $order)
     {
-        //
+        return view('order.show',compact('order'));
     }
 
     /**
@@ -80,6 +112,15 @@ class OrderController extends Controller
      */
     public function destroy(Order $order)
     {
-        //
+         $order->delete();
+        return redirect()->route('order.index');
+    }
+
+    public function confirm($id)
+    {
+        $order = Order::find($id);
+        $order->status = 1;
+        $order->save();
+        return back();
     }
 }

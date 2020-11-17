@@ -25,7 +25,7 @@
             <thead class="thead-dark">
               <tr>
                 <th>No</th>
-                <th>Item Name</th>
+                <th>Foodpackage</th>
                 <th>Price</th>
                 <th>Quantity</th>
                 <th>Subtotal</th>
@@ -33,15 +33,15 @@
             </thead>
             <tbody>
               @php $i=1; $total=0; @endphp
-              @foreach($order->items as $item)
+              @foreach($order->foodpackages as $foodpackage)
               <tr>
                 <td>{{$i++}}</td>
-                <td>{{$item->name}}</td>
-                <td>{{$item->price}}</td>
-                <td>{{$item->pivot->quantity}}</td>
-                <td>{{$item->price * $item->pivot->quantity}}</td>
+                <td>{{$foodpackage->foodpackages}}</td>
+                <td>{{$foodpackage->price}}</td>
+                <td>{{$foodpackage->pivot->quantity}}</td>
+                <td>{{$foodpackage->price * $foodpackage->pivot->quantity}}</td>
               </tr>
-              @php $total+= $item->price * $item->pivot->quantity; @endphp
+              @php $total+= $foodpackage->price * $foodpackage->pivot->quantity; @endphp
               @endforeach
 
               <tr>
@@ -59,6 +59,7 @@
 
           @elseif($order->status == 1)
             <button class="btn btn-success">Success Order</button>
+            <button class="btn btn-success"><a href="{{route('order.index')}}"></a>Back</button>
           @endif
         </div>
       </div>

@@ -13,11 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+<<<<<<< HEAD
 Route::get('/', function () {
     return view('frontend.calculate');
      // return view('Backendtemplate');
+=======
+// Route::get('/', function () {
+//     return view('backendtemplate');
+>>>>>>> fac6cc2c0b6ce756bf5e827c6dc990e0886148bb
 
-});
+// });
 
 //frontend 
 Route::get('/', 'FrontendController@home')->name('mainpage');
@@ -28,19 +33,29 @@ Route::get('calculate','FrontendController@calculate')->name('calculatepage');
 
 Route::get('signin','FrontendController@signin')->name('signinpage');
 
-
-
-Route::resource('foodpackage','FoodpackageController');
-Route::resource('userdetail','UserdetailController');
-
 Route::get('contact','FrontendController@contact')->name('contactpage');
+
 Route::get('cartpage','FrontendController@cart')->name('cartpage');
+
+
+//backend
+Route::middleware('role:admin')->group(function () {
+Route::resource('foodpackage','FoodpackageController');
+
+});
+
+Route::resource('userdetail','UserdetailController');
 
 
 Route::resource('user','UserController');
 
-Auth::routes();
+Route::resource('order', 'OrderController');
+
+Route::post('confirm/{id}', 'OrderController@confirm')->name('order.confirm');
+
+Auth::routes(['register'=>false]);
 
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::post('getfoodpackage','FrontendController@getFoodPackages')->name('getfoodpackage');
+
