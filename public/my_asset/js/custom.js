@@ -18,8 +18,9 @@
 
                     var ftotal = priceb + pricel + priced ;
 
-
-                   alert(ftotal);
+                    alert(foodpackagesd);
+                    // alert(priced);
+                    // alert(typed);
                    
                                       
     
@@ -39,9 +40,9 @@
                         ftotal:total,
                         qty:1
                       
-                    };
+                    }
 
-                    alert(item);
+                    console.log(item);
 
                     var itemlists = localStorage.getItem("item");
                     console.log(itemlists);
@@ -65,7 +66,7 @@
                         var string = JSON.stringify(itemarray);
                         localStorage.setItem("item", string);
                        
-                        count();
+                    
     
                 })
           
@@ -136,8 +137,7 @@
                 var string = JSON.stringify(itemarray);
                 localStorage.setItem("item",string);
                 showdata();
-                count();
-
+           
             })
             
             $("tbody").on("click", ".plus-btn",function(){
@@ -152,7 +152,7 @@
                         var string = JSON.stringify(itemarray);
                         localStorage.setItem("item", string);
                         showdata();
-                        count();
+                     
                     })
                                 
             })
@@ -172,7 +172,7 @@
                         var string = JSON.stringify(itemarray);
                         localStorage.setItem("item", string);
                         showdata();
-                        count();
+                      
                     });
 
                 

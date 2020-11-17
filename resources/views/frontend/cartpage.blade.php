@@ -26,9 +26,11 @@
         <table class="table">
           <thead>
             <tr>
-              <th colspan="3"> Product</th>
-              <th colspan="3"> Qty</th>
+              <th colspan="2"> Breakfast</th>
+              <th colspan="2"> Lunch</th>
+              <th colspan="2">Dinner</th>
               <th>Price</th>
+              <th>Qty</th>
               <th>Subotal</th>
             </tr>
           </thead>

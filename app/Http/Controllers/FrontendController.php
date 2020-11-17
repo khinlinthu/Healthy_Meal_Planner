@@ -29,9 +29,9 @@ class FrontendController extends Controller
     public function getFoodPackages(Request $request)
     {
         $w_target = $request->w_target;
-        $bf = Foodpackage::where('weight_target',$w_target)->where('type','Breakfast')->first();
-        $lunch = Foodpackage::where('weight_target',$w_target)->where('type','Lunch')->first();
-        $dinner = Foodpackage::where('weight_target',$w_target)->where('type','Dinner')->first();
+        $bf = Foodpackage::inRandomOrder()->where('weight_target',$w_target)->where('type','Breakfast')->first();
+        $lunch = Foodpackage::inRandomOrder()->where('weight_target',$w_target)->where('type','Lunch')->first();
+        $dinner = Foodpackage::inRandomOrder()->where('weight_target',$w_target)->where('type','Dinner')->first();
 
         return response()->json([
         'Breakfast'=>$bf,
