@@ -9,7 +9,7 @@ class FrontendController extends Controller
 {
 	public function home($value='')
     {
-    	return view('frontend.mainpage');
+    	return view('frontend.main_page');
     }
 
     public function about($value='')

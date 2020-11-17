@@ -17,6 +17,7 @@
           <div class="tile">
           		<h2 class="d-inline-block">Foodpackages</h2>
 				<a href="{{route('foodpackage.create')}}" class="btn btn-info float-right">Add new</a>
+			
 				<table class="table mt-3 table-bordered dataTable">
 					<thead>
 					<tr>

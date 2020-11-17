@@ -28,19 +28,19 @@
         <table class="table">
           <thead>
             <tr>
-<<<<<<< HEAD
-              <th colspan="2"> Breakfast</th>
+
+         <!--      <th colspan="2"> Breakfast</th>
               <th colspan="2"> Lunch</th>
               <th colspan="2">Dinner</th>
               <th>Price</th>
               <th>Qty</th>
-              <th>Subotal</th>
-=======
+              <th>Subotal</th> -->
+
               <th colspan="2"> FoodPackages</th>
               <th colspan="3"> Qty</th>
               <th>Price</th>
               <th>Subtotal</th>
->>>>>>> fac6cc2c0b6ce756bf5e827c6dc990e0886148bb
+
             </tr>
           </thead>
           <tbody id="shoppingcart_table">
@@ -82,8 +82,7 @@
 @endsection
 
 @section('script')
-  <script type="text/javascript" src="{{asset('my_asset/js/custom.js')}}"></script>
-
+    <link rel="stylesheet" type="text/css" href="{{ asset('my_asset/fontawesome/css/all.min.css')}}">
   <script type="text/javascript">
     $.ajaxSetup({
           headers: {

@@ -19,19 +19,24 @@
           <div class="tile">
 
 				<h2>Foodpackages</h2>
+					<div class="col-2" style="margin-left: 850px;margin-top:-35px;display: inline-block;">
+					<a href="{{route('foodpackage.index')}}" class="btn btn-outline-primary btn-block float-right"> 
+	            		<i class="fa fa-backward pr-2"></i>	Go Back 
+	            	</a>
+				</div>
 				<form action="{{route('foodpackage.update',$foodpackage->id)}}" method="POST" enctype="multipart/form-data">
 					@csrf
 					@method('PUT')
-					<div class="form-group">
-						<label>Foodpackage</label>
-						<input type="text" name="foodpackages" class="form-control @error('foodpackages') is-invalid @enderror" value="{{$foodpackage->foodpackages}}">
-						@error('foodpackages')
-						<span class="invalid-feedback" role="alert">
-								<strong>{{$message}}</strong>
-						</span>
-					
-						@enderror
-					</div>
+
+				    <div class="form-group">
+			              <label>Foodpackages</label>
+			              <textarea class="form-control @error('foodpackages') is-invalid @enderror" name="foodpackages">{{$foodpackage->foodpackages}}</textarea>
+			              @error('foodpackages')
+			                <span class="invalid-feedback" role="alert">
+			                  <strong>{{ $message }}</strong>
+			                </span>
+			              @enderror
+	            	</div>
 					<div class="form-group">
 						<label>TotalCalories</label>
 						<input type="text" name="totalCalories" class="form-control @error('totalCalories') is-invalid @enderror" value="{{$foodpackage->totalCalories}}">

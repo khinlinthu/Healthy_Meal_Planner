@@ -1,56 +1,59 @@
 <!DOCTYPE html>
 <html class="no-js">
-	<head>
+    <head>
+    
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Healthy Meal Planner</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>Healthy Meal Planner</title>
-		<meta name="description" content="">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- CSS
+        <!-- CSS
         ================================================ -->
         <!-- Owl Carousel -->
-		<link rel="stylesheet" href="{{ asset('frontend_asset/css/owl.carousel.css')}}">
+        <link rel="stylesheet" href="{{ asset('frontend_assets/css/owl.carousel.css')}}">
         <!-- bootstrap.min css -->
-		<link rel="stylesheet" href="{{asset('frontend_asset/css/bootstrap.min.css')}}">
+        <link rel="stylesheet" href="{{asset('frontend_assets/css/bootstrap.min.css')}}">
         <!-- Font-awesome.min css -->
-		<link rel="stylesheet" href="{{asset('frontend_asset/css/font-awesome.min.css')}}">
+        <link rel="stylesheet" href="{{asset('frontend_assets/css/font-awesome.min.css')}}">
         <!-- Main Stylesheet -->
-        <link rel="stylesheet" href="{{asset('frontend_asset/css/animate.min.css')}}">
+        <link rel="stylesheet" href="{{asset('frontend_assets/css/animate.min.css')}}">
 
-		<link rel="stylesheet" href="{{asset('frontend_asset/css/main.css')}}">
+        <link rel="stylesheet" href="{{asset('frontend_assets/css/main.css')}}">
         <!-- Responsive Stylesheet -->
-		<link rel="stylesheet" href="{{asset('frontend_asset/css/responsive.css')}}">
+        <link rel="stylesheet" href="{{asset('frontend_assets/css/responsive.css')}}">
 
-        <link rel="stylesheet" type="text/css" href="{{ asset('my_asset/fontawesome/css/all.min.css')}}">
+      
         
-		<!-- Js -->
-    <script src="{{asset('frontend_asset/js/vendor/modernizr-2.6.2.min.js')}}"></script>
+        <!-- Js -->
+    <script src="{{asset('frontend_assets/js/vendor/modernizr-2.6.2.min.js')}}"></script>
     <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
-    <script>window.jQuery || document.write('<script src="{{asset('frontend_asset/js/vendor/jquery-1.10.2.min.js')}}"><\/script>')</script>
-    <script src="{{asset('frontend_asset/js/jquery.nav.js')}}"></script>
-    <script src="{{asset('frontend_asset/js/jquery.sticky.js')}}"></script>
-    <script src="{{asset('frontend_asset/js/bootstrap.min.js')}}"></script>
-    <script src="{{asset('frontend_asset/js/plugins.js')}}"></script>
-    <script src="{{asset('frontend_asset/js/wow.min.js')}}"></script>
-    <script src="{{asset('frontend_asset/js/main.js')}}"></script>
-    <script src="{{asset('frontend_asset/js/jquery.min.js')}}"></script>
+    <script>window.jQuery || document.write('<script src="{{asset('frontend_assets/js/vendor/jquery-1.10.2.min.js')}}"><\/script>')</script>
+    <script src="{{asset('frontend_assets/js/jquery.nav.js')}}"></script>
+    <script src="{{asset('frontend_assets/js/jquery.sticky.js')}}"></script>
+    <script src="{{asset('frontend_assets/js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('frontend_assets/js/plugins.js')}}"></script>
+    <script src="{{asset('frontend_assets/js/wow.min.js')}}"></script>
+    <script src="{{asset('frontend_assets/js/main.js')}}"></script>
+    <script src="{{asset('frontend_assets/js/bootstrap.bundle.min.js')}}"></script>
+   <!--  <script src="{{asset('frontend_assets/js/jquery.min.js')}}"></script> -->
+    
     <script type="text/javascript" src="{{asset('my_asset/js/custom.js')}}"></script>
 
 
     <link rel="stylesheet" type="text/css" href="{{asset('my_asset/css/style.css')}}">
-	</head>
-	<body>
-	<!--
-	header-img start 
-	============================== -->
+    </head>
+    <body>
+    <!--
+    header-img start 
+    ============================== -->
     <section id="hero-area">
-      <img class="img-responsive" src="{{asset('frontend_asset/images/header.jpg')}}" alt="">
+      <img class="img-responsive" src="{{asset('frontend_assets/images/header.jpg')}}" alt="">
     </section>
-	<!--
+    <!--
     Header start 
-	============================== -->
-	<nav id="navigation">
+    ============================== -->
+    <nav id="navigation">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -66,7 +69,7 @@
                                 <span class="icon-bar"></span>
                               </button>
                                   <a class="navbar-brand" href="#">
-                                    <img src="{{asset('frontend_asset/images/real2.png')}}" alt="Logo" style="width: 140px;height: 140px;margin-top: -59px; margin-left: -30px; ">
+                                    <img src="{{asset('frontend_assets/images/real2.png')}}" alt="Logo" style="width: 140px;height: 140px;margin-top: -59px; margin-left: -30px; ">
                                   </a>
 
                             </div>
@@ -76,9 +79,9 @@
                               <ul class="nav navbar-nav navbar-right" id="top-nav">
 
 
-                                <li class="nav-item"><a class="nav-link" href="{{route('mainpage')}}">Home</a></li>
-                                <li class="nav-item"><a class="nav-link" href="{{route('aboutpage')}}">about us</a></li>
-                                <li class="nav-item"><a class="nav-link" href="{{route('calculatepage')}}">Calculate</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{route('main_page')}}">Home</a></li>
+                               <!--  <li class="nav-item"><a class="nav-link" href="{{route('aboutpage')}}">about us</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{route('calculatepage')}}">Calculate</a></li> -->
                                  <li class="nav-item"><a class="nav-link" href="{{route('cartpage')}}">Checkout</a></li>
 
                                 @auth
@@ -106,7 +109,7 @@
                                 
                                   @endauth
 
-                                <li class="nav-item"><a class="nav-link" href="{{route('contactpage')}}">contacts</a></li>
+                               <!--  <li class="nav-item"><a class="nav-link" href="{{route('contactpage')}}">contacts</a></li> -->
 
                            
 
@@ -119,9 +122,9 @@
                 </div><!-- .col-md-12 close -->
             </div><!-- .row close -->
         </div><!-- .container close -->
-	</nav><!-- header close -->
+    </nav><!-- header close -->
 
-	@yield('content')
+    @yield('content')
 
 
     <section id="footer">
@@ -133,20 +136,21 @@
                         <div class="info">
                             <ul>
                                 <li>
-                                  <h4><i class="fa fa-phone"></i>TALK TO US</h4>
-                                  <p>0987654321</p>
+                                  <h4><i class="fa fa-phone"></i>Telephone</h4>
+                                  <p>09-893897869 | 09-7643892997</p>
                                     
                                 </li>
                                 <li>
-                                  <h4><i class="fa fa-map-marker"></i>LOCATION</h4>
-                                  <p>Yangon</p>
+                                  <h4><i class="fa fa-map-marker"></i>Address</h4>
+                                  <p>Sanchung Pathein street,Yangon Myanmar</p>
                                 </li>
                                 <li>
-                                  <h4><i class="fa fa-envelope"></i>E_MAIL</h4>
-                                  <p>healthymealplanner@gmail.com</p>
+                                  <h4><i class="fa fa-envelope"></i>E mail</h4>
+                                  <p>healthyplan@gmailcom - info@mail.ru</p>
                                   
                                 </li>
                             </ul>
+
                         </div>
                     </div>
                 </div>
@@ -170,38 +174,20 @@
                             <h3>PHOTO <span>STREAM</span></h3>
                             <ul>
 
-                                <!-- <li>
-                                    <a href="#"><img src="images/photo/photo-1.jpg" alt=""></a>
-
                                 <li>
-                                    <a href="#"><img src="{{asset('frontend_asset/images/photo/photo-1.jpg')}}" alt=""></a>
+                                    <a href="#"><img src="{{asset('frontend_assets/images/photo/photo-1.jpg')}}" alt=""></a>
 
-=======
-
-                                <li>
-                                    <a href="#"><img src="{{asset('frontend_asset/images/photo/photo-1.jpg')}}" alt=""></a>
->>>>>>> 1f4daa4094742915d5f186d876ac0b9c4e023906
                                 </li>
                                 <li>
-                                    <a href="#"><img src="{{asset('frontend_asset/images/photo/photo-2.jpg')}}" alt=""></a>
+                                    <a href="#"><img src="{{asset('frontend_assets/images/photo/photo-2.jpg')}}" alt=""></a>
                                 </li>
                                 <li>
-                                    <a href="#"><img src="{{asset('frontend_asset/images/photo/photo-3.jpg')}}" alt=""></a>
+                                    <a href="#"><img src="{{asset('frontend_assets/images/photo/photo-3.jpg')}}" alt=""></a>
                                 </li>
-                                <li>
-<<<<<<< HEAD
-
-                                    <a href="#"><img src="images/photo/photo-4.jpg" alt=""></a>
-                                </li> -->
-                     <!--   <a href="#"><img src="{{asset('frontend_asset/images/photo/photo-4.jpg')}}" alt=""></a> -->
+                        
+                                     <a href="#"><img src="{{asset('frontend_assets/images/photo/photo-4.jpg')}}" alt=""></a>
                                 </li>
 
-                            </ul>
-
-                                    <a href="#"><img src="images/photo/photo-4.jpg" alt=""></a>
-                                </li> 
-                                    <a href="#"><img src="{{asset('frontend_asset/images/photo/photo-4.jpg')}}" alt=""></a>
-                                </li> 
                           </ul>
 
                         </div>
@@ -251,7 +237,7 @@
         </div>
     </footer>
 
-     @yield('script')
-	</body>
+    @yield('script')
+    </body>
 </html>
 

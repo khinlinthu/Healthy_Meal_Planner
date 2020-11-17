@@ -21,64 +21,48 @@
 
                     var ftotal = priceb + pricel + priced ;
 
-<<<<<<< HEAD
                     alert(foodpackagesd);
                     // alert(priced);
                     // alert(typed);
-=======
+
                     var qty =1;
 
 
                    alert(typed);
->>>>>>> fac6cc2c0b6ce756bf5e827c6dc990e0886148bb
+
                    
                                       
     
                     var item = {
-<<<<<<< HEAD
-                        foodpackagesb:foodpackagesb,
-                        priceb:priceb,
-                        typeb:typeb,
 
-                        foodpackagesl:foodpackagesl,
-                        pricel:pricel,
-                        typel:typel,
-
-                        foodpackagesd:foodpackagesd,
-                        priced:priced,
-                        typed:typed,
-
-                        ftotal:total,
-                        qty:1
+                            foodpackagesb : foodpackagesb ,
+                            priceb : priceb ,
+                            typeb : typeb , 
+                            idb : idb , 
+                            foodpackagesl : foodpackagesl ,
+                            pricel : pricel ,   
+                            typel : typel ,
+                            idl : idl ,
+                            foodpackagesd : foodpackagesd ,
+                            priced : priced ,   
+                            typed : typed ,
+                            idd : idd ,
+                            ftotal : ftotal ,
+                            qty : qty 
+                            
                       
-                    }
+                    };
 
                     console.log(item);
 
-                    var itemlists = localStorage.getItem("item");
-                    console.log(itemlists);
-=======
-                                    foodpackagesb : foodpackagesb ,
-                                    priceb : priceb ,
-                                    typeb : typeb , 
-                                    idb : idb , 
-                                    foodpackagesl : foodpackagesl ,
-                                    pricel : pricel ,   
-                                    typel : typel ,
-                                    idl : idl ,
-                                    foodpackagesd : foodpackagesd ,
-                                    priced : priced ,   
-                                    typed : typed ,
-                                    idd : idd ,
-                                    ftotal : ftotal ,
-                                    qty : qty 
-                                };
+                    // var itemlists = localStorage.getItem("item");
+                    // console.log(itemlists);
 
                     // console.log(item);
 
                     var itemlists = localStorage.getItem("foodpackage");
                     // console.log(itemlists);
->>>>>>> fac6cc2c0b6ce756bf5e827c6dc990e0886148bb
+
                         var itemarray;
                         if (itemlists == null) {
                             itemarray = [];
@@ -97,16 +81,10 @@
                             itemarray.push(item);
                         }
                         var string = JSON.stringify(itemarray);
-<<<<<<< HEAD
-                        localStorage.setItem("item", string);
-                       
-                    
-    
-=======
                         localStorage.setItem("foodpackage", string);
                         
                         showdata();
->>>>>>> fac6cc2c0b6ce756bf5e827c6dc990e0886148bb
+
                 })
           
                         function showdata(){
@@ -169,12 +147,7 @@
                 var string = JSON.stringify(itemarray);
                 localStorage.setItem("foodpackage",string);
                 showdata();
-<<<<<<< HEAD
-           
-=======
-                
 
->>>>>>> fac6cc2c0b6ce756bf5e827c6dc990e0886148bb
             })
             
             $("tbody").on("click", ".plus-btn",function(){
@@ -189,14 +162,11 @@
                         var string = JSON.stringify(itemarray);
                         localStorage.setItem("foodpackage", string);
                         showdata();
-<<<<<<< HEAD
-                     
-=======
-                       
->>>>>>> fac6cc2c0b6ce756bf5e827c6dc990e0886148bb
-                    })
+
+             
                                 
             })
+        })
             $("tbody").on("click", ".minus-btn",function(){
                
                 var id = $(this).data('id');
@@ -213,10 +183,7 @@
                         var string = JSON.stringify(itemarray);
                         localStorage.setItem("foodpackage", string);
                         showdata();
-<<<<<<< HEAD
-                      
-=======
->>>>>>> fac6cc2c0b6ce756bf5e827c6dc990e0886148bb
+
                     });
       
             });

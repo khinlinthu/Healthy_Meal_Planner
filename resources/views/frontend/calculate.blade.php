@@ -165,33 +165,6 @@
     </div>
 
 
-  {{-- <div class="order">         
-  <div class="jumbotron jumbotron-fluid subtitle">
-      <div class="container">
-        <h1 class="text-center text-white"> Order Received </h1>
-      </div>
-  </div>
-  <!-- Content -->
-  <div class="container my-5" style="margin-left: 500px;">
-
-    <div class="row justify-content-center">
-      <div class="col-10 shadow p-3 mb-5 bg-white rounded">
-        <div class="row">
-          <div class="col-4">
-            <img src="{{asset('frontend_asset/images/success-tick-dribbble.gif')}}" class="img-fluid" style="width: 120px;height: 100px; ">
-          </div>
-          <div class="col-8 pt-5">
-            <h1> Your order is complete </h1>
-            <p> You order will be delivered in 4 days. </p>
-          </div>
-        </div>
-        
-      </div>
-
-    </div>
-  </div>
-  </div> --}}
-
 @endsection
 
  @section('script')

@@ -13,19 +13,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-<<<<<<< HEAD
 Route::get('/', function () {
     return view('frontend.calculate');
      // return view('Backendtemplate');
-=======
+
 // Route::get('/', function () {
 //     return view('backendtemplate');
->>>>>>> fac6cc2c0b6ce756bf5e827c6dc990e0886148bb
 
-// });
+
+});
 
 //frontend 
-Route::get('/', 'FrontendController@home')->name('mainpage');
+Route::get('/', 'FrontendController@home')->name('main_page');
 
 Route::get('about', 'FrontendController@about')->name('aboutpage');
 
