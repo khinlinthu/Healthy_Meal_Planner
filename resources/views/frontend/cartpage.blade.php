@@ -14,7 +14,7 @@
     <!-- Shopping Cart Div -->
     <div class="row mt-5 shoppingcart_div">
       <div class="col-12">
-        <a href="index.php" class="btn mainfullbtncolor btn-secondary float-right px-3" > 
+        <a href="index.php" class="btn mainfullbtncolor btn-outline-secondary float-right px-3" > 
           <i class="icofont-shopping-cart"></i>
           Continue Shopping 
         </a>
@@ -73,7 +73,6 @@
 @endsection
 
 @section('script')
-  <script type="text/javascript" src="{{asset('my_asset/js/custom.js')}}"></script>
 
   <script type="text/javascript">
     $.ajaxSetup({

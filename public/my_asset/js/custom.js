@@ -26,8 +26,7 @@
 
                    alert(typed);
                    
-                                      
-    
+                                    
                     var item = {
                                     foodpackagesb : foodpackagesb ,
                                     priceb : priceb ,

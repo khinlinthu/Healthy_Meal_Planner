@@ -22,7 +22,7 @@
         <!-- Responsive Stylesheet -->
 		<link rel="stylesheet" href="{{asset('frontend_asset/css/responsive.css')}}">
 
-        <link rel="stylesheet" type="text/css" href="{{ asset('my_asset/fontawesome/css/all.min.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{asset('my_asset/fontawesome/css/all.min.css')}}">
         
 		<!-- Js -->
     <script src="{{asset('frontend_asset/js/vendor/modernizr-2.6.2.min.js')}}"></script>
@@ -170,17 +170,8 @@
                             <h3>PHOTO <span>STREAM</span></h3>
                             <ul>
 
-                                <!-- <li>
-                                    <a href="#"><img src="images/photo/photo-1.jpg" alt=""></a>
-
                                 <li>
                                     <a href="#"><img src="{{asset('frontend_asset/images/photo/photo-1.jpg')}}" alt=""></a>
-
-=======
-
-                                <li>
-                                    <a href="#"><img src="{{asset('frontend_asset/images/photo/photo-1.jpg')}}" alt=""></a>
->>>>>>> 1f4daa4094742915d5f186d876ac0b9c4e023906
                                 </li>
                                 <li>
                                     <a href="#"><img src="{{asset('frontend_asset/images/photo/photo-2.jpg')}}" alt=""></a>
@@ -189,19 +180,8 @@
                                     <a href="#"><img src="{{asset('frontend_asset/images/photo/photo-3.jpg')}}" alt=""></a>
                                 </li>
                                 <li>
-<<<<<<< HEAD
-
-                                    <a href="#"><img src="images/photo/photo-4.jpg" alt=""></a>
-                                </li> -->
-                     <!--   <a href="#"><img src="{{asset('frontend_asset/images/photo/photo-4.jpg')}}" alt=""></a> -->
-                                </li>
-
-                            </ul>
-
-                                    <a href="#"><img src="images/photo/photo-4.jpg" alt=""></a>
-                                </li> 
                                     <a href="#"><img src="{{asset('frontend_asset/images/photo/photo-4.jpg')}}" alt=""></a>
-                                </li> 
+                                </li>
                           </ul>
 
                         </div>
