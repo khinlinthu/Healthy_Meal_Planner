@@ -124,7 +124,7 @@
 	@yield('content')
 
 
-	<section id="footer">
+    <section id="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -133,17 +133,17 @@
                         <div class="info">
                             <ul>
                                 <li>
-                                  <h4><i class="fa fa-phone"></i>Telefone</h4>
-                                  <p>(000) 123 456 78- (000) 123 4567 89</p>
+                                  <h4><i class="fa fa-phone"></i>TALK TO US</h4>
+                                  <p>0987654321</p>
                                     
                                 </li>
                                 <li>
-                                  <h4><i class="fa fa-map-marker"></i>Address</h4>
-                                  <p>2046 Blue Spruce Lane Laurel Canada</p>
+                                  <h4><i class="fa fa-map-marker"></i>LOCATION</h4>
+                                  <p>Yangon</p>
                                 </li>
                                 <li>
-                                  <h4><i class="fa fa-envelope"></i>E mail</h4>
-                                  <p>rest@gmail.com - rest@mail.ru</p>
+                                  <h4><i class="fa fa-envelope"></i>E_MAIL</h4>
+                                  <p>healthymealplanner@gmail.com</p>
                                   
                                 </li>
                             </ul>
@@ -153,16 +153,11 @@
                 <!-- .col-md-4 close -->
                 <div class="col-md-4">
                     <div class="block wow fadeInLeft"  data-wow-delay="700ms">
-                        <h3>LATEST <span>BLOG POSTS</span></h3>
+                        <h3>LATEST <span>Our Webiste</span></h3>
                         <div class="blog">
                             <ul>
                                 <li>
-                                    <h4><a href="#">Nov 9-2014</a></h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adip iscing elit. Curabitur ut blandit sapien</p>
-                                </li>
-                                <li>
-                                    <h4><a href="#">Sep 8-2014</a></h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adip iscing elit. Curabitur ut blandit sapien</p>
+                                    <p>Our Healthy Meal Planner will help you find the recipe that suits your personal needs.</p>
                                 </li>
                             </ul>                
                         </div>
@@ -174,20 +169,18 @@
                         <div class="gallary">
                             <h3>PHOTO <span>STREAM</span></h3>
                             <ul>
-<<<<<<< HEAD
-                               <li>
-=======
 
                                 <!-- <li>
                                     <a href="#"><img src="images/photo/photo-1.jpg" alt=""></a>
 
                                 <li>
->>>>>>> 34010927df662c956ec752b39d7a2169f3815945
                                     <a href="#"><img src="{{asset('frontend_asset/images/photo/photo-1.jpg')}}" alt=""></a>
-                                </li>
+
+=======
 
                                 <li>
                                     <a href="#"><img src="{{asset('frontend_asset/images/photo/photo-1.jpg')}}" alt=""></a>
+>>>>>>> 1f4daa4094742915d5f186d876ac0b9c4e023906
                                 </li>
                                 <li>
                                     <a href="#"><img src="{{asset('frontend_asset/images/photo/photo-2.jpg')}}" alt=""></a>
@@ -195,9 +188,15 @@
                                 <li>
                                     <a href="#"><img src="{{asset('frontend_asset/images/photo/photo-3.jpg')}}" alt=""></a>
                                 </li>
-                            </ul>
+                                <li>
 <<<<<<< HEAD
-=======
+
+                                    <a href="#"><img src="images/photo/photo-4.jpg" alt=""></a>
+                                </li> -->
+                     <!--   <a href="#"><img src="{{asset('frontend_asset/images/photo/photo-4.jpg')}}" alt=""></a> -->
+                                </li>
+
+                            </ul>
 
                                     <a href="#"><img src="images/photo/photo-4.jpg" alt=""></a>
                                 </li> 
@@ -205,7 +204,6 @@
                                 </li> 
                           </ul>
 
->>>>>>> 34010927df662c956ec752b39d7a2169f3815945
                         </div>
                         <div class="social-media-link">
                             <h3>Follow <span>US</span></h3>
@@ -246,7 +244,7 @@
             <div class="row">
                 <div class="col-md-12 col-sm-12">
                     <div class="block">
-                        <p>Copyright &copy; 2014 - All Rights Reserved.Design and Developed By <a href="http://www.themefisher.com">Themefisher</a></p>
+                        <p>Copyright &copy; 2020 - All Rights Reserved.Design and Developed By HealthyMealPlanner</p>
                     </div>
                 </div>
             </div>
