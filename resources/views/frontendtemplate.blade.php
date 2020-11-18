@@ -44,6 +44,10 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
 
     <!-- Theme Style -->
     <link rel="stylesheet" href="{{asset('frontend_assets/css/style.css')}}">
+    <!-- <script type="text/javascript" src="{{asset('my_asset/js/custom.js')}}"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="{{asset('my_asset/css/style.css')}}"> -->
   </head>
   <body>
     
@@ -195,6 +199,9 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
     
 
     <script src="{{asset('frontend_assets/js/main.js')}}"></script>
+
+    <script src="{{asset('frontend_assets/js/bootstrap.bundle.min.js')}}"></script>
+    <!-- <script src="{{asset('frontend_assets/js/jquery.min.js')}}"></script> -->
     
   </body>
 </html>
