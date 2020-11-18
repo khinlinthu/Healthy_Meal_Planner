@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Foodpackage;
+use App\Order;
 
 class FrontendController extends Controller
 {
@@ -41,9 +42,9 @@ class FrontendController extends Controller
        ]);
     }
 
-    public function contact($value='')
+    public function history(Order $order)
     {
-    return view('frontend.contact');
+    return view('order.history',compact('order'));
     }
 
     public function cart($value='')

@@ -6,6 +6,8 @@
  <section id="slider" style="background-color: #fff;">
         <div class="container">
             <div class="row">
+
+
                 <div class="col-md-12">
                     <div class="block wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
                         <div class="title">
@@ -130,7 +132,9 @@
                               </form>
                           </div>
                         </div>
+                        </div>
                     </div>    <!-- Subcategory Title -->
+
 
                     <div class="my-5 showdetail">
 
@@ -139,63 +143,15 @@
                                 <form method="" action="">
                                       <div class="row">
                                           <div class="col-md-4 breakfast">
-                                            {{-- <div class="tile">
-                                              <div class="card my-3">
-                                                <div class="row no-gutters">
-                                                  <div class="col-md-8">
-                                                    <div class="card-body">
-                                                      <h5 class="card-title" id="codenob"></h5>
-                                                      <p class="card-text" id="foodpackagesb"></p>
-                                                      <p class="card-text" id="priceb"></p>
-                                                      <p class="card-text" id="breakfast"></p>
-                                                      <p class="card-text" id="typeb"></p>
-                                                      <p class="card-text" id="idb"></p>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div> --}}
+                                            
                                           </div>
 
                                           <div class="col-md-4 lunch">
-                                             <div class="tile">
-                                               
-
-                                                <div class="card my-3">
-                                                  <div class="row no-gutters">
-                                                    <div class="col-md-8">
-                                                      <div class="card-body">
-                                                        <h5 class="card-title" id="codenol"></h5>
-                                                        <p class="card-text" id="foodpackagesl"></p>
-                                                        <p class="card-text" id="pricel"></p>
-                                                        <p class="card-text" id="lunch"></p>
-                                                        <p class="card-text" id="typel"></p>
-                                                        <p class="card-text" id="idl"></p>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                              </div>
+                                             
                                           </div>
 
                                           <div class="col-md-4 dinner">
-                                            <div class="tile">
-
-                                              <div class="card my-3">
-                                                <div class="row no-gutters">
-                                                  <div class="col-md-8">
-                                                    <div class="card-body">
-                                                      <h5 class="card-title" id="codenod"></h5>
-                                                      <p class="card-text" id="foodpackagesd"></p>
-                                                      <p class="card-text" id="priced"></p>
-                                                      <p class="card-text" id="dinner"></p>
-                                                      <p class="card-text" id="typed"></p>
-                                                      <p class="card-text" id="idd"></p>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
+                                           
                                           </div>
 
                                          <button class="btn btn-warning mt-1 addtocart">
@@ -209,7 +165,7 @@
 
 
                   
-            </div>  
+              
 
             {{-- <div class="row showdetail">
                 <div class="breakfast">
@@ -575,52 +531,51 @@
                     $(".bmi").hide();
                     $(".showdetail").show();
 
-                   // $('#codenob').html(codenob);
-                   // $('#foodpackagesb').html(foodpackagesb);
-                   // $('#priceb').html(priceb);
-                   // $('#breakfast').html(breakfast);
-                   // $('#typeb').html(typeb);
-                   // $('#idb').html(idb);
-
-
-                   // $('#codenol').html(codenol);
-                   // $('#foodpackagesl').html(foodpackagesl);
-                   // $('#pricel').html(pricel);
-                   // $('#lunch').html(lunch);
-                   // $('#typel').html(typel);
-                   // $('#idl').html(idl);
-                
-
-                   // $('#codenod').html(codenod);
-                   // $('#foodpackagesd').html(foodpackagesd);
-                   // $('#priced').html(priced);
-                   // $('#dinner').html(dinner);
-                   // $('#typed').html(typed);
-                   // $('#idd').html(idd);
 
                 
-                 var html = "";
-                 html +=`<div class="card border-success mb-3" style="max-width: 18rem;">
-                        <div class="card-header">${typeb}</div>
-                             <div class="card-body text-success">
-                                <h5 class="card-title">Codeno : ${codenob}</h5>
-                                     <p class="card-text">Foodpackage : ${foodpackagesb}</p>
-                                     <p class="card-text">TotalCalories : ${breakfast}</p>
-                                     <p class="card-text">Price : ${priceb}</p>
-                             </div>
-                     </div>`;
+                 // var html = "";
+                 // html +=`<div class="card border-success mb-3" style="max-width: 18rem;">
+                 //        <div class="card-header" id="typeb">${typeb}</div>
+                 //             <div class="card-body text-success">
+                 //                <h5 class="card-title" id="codeb">${codenob}</h5>
+                 //                     <p class="card-text" id="foodpackagesb">${foodpackagesb}</p>
+                 //                     <p class="card-text" id="breakfast">${breakfast}</p>
+                 //                     <p class="card-text" id="priceb"> ${priceb}</p>
+                 //                     <p class="card-text" id="idb">${idb}</p>
+                 //             </div>
+                 //     </div>`;
                 
+                 //     // console.log(html);
+                 //     $('.breakfast').html(html);
 
-                     // console.log(html);
-                     $('.breakfast').html(html);
+                 //     var html1="";
+                 //     html1 +=`<div class="card border-success mb-3" style="max-width: 18rem;">
+                 //        <div class="card-header" id="typel">${typel}</div>
+                 //             <div class="card-body text-success">
+                 //                <h5 class="card-title" id="codel">${codenol}</h5>
+                 //                     <p class="card-text" id="foodpackagesl">${foodpackagesl}</p>
+                 //                     <p class="card-text" id="lunch">${lunch}</p>
+                 //                     <p class="card-text" id="pricel"> ${pricel}</p>
+                 //                     <p class="card-text" id="idl">${idl}</p>
+                 //             </div>
+                 //     </div>`;
+                 //     $('.lunch').html(html1);
+
+                 //     var html2="";
+                 //     html2 +=`<div class="card border-success mb-3" style="max-width: 18rem;">
+                 //        <div class="card-header" id="typed">${typed}</div>
+                 //             <div class="card-body text-success">
+                 //                <h5 class="card-title" id="coded">${codenod}</h5>
+                 //                     <p class="card-text" id="foodpackagesd">${foodpackagesd}</p>
+                 //                     <p class="card-text" id="dinner">${dinner}</p>
+                 //                     <p class="card-text" id="priced"> ${priced}</p>
+                 //                     <p class="card-text" id="idd">${idd}</p>
+                 //             </div>
+                 //     </div>`;
+                 //     $('.dinner').html(html2);
               })
                  
-                
-                
-            
-                
-               
-            
+          
 
            })
        

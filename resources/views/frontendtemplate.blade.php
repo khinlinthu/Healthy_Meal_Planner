@@ -97,6 +97,8 @@
                                           <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                               @csrf
                                           </form>
+
+                                          <a href="{{ route('history') }}">Order History</a>
                                       </div>
                                   </li>
                                   @else

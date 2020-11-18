@@ -124,8 +124,4 @@ class OrderController extends Controller
         return back();
     }
 
-    public function back($value='')
-    {
-        return redirect()->route('order.index');
-    }
 }
