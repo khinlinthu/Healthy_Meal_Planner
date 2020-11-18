@@ -1,0 +1,24 @@
+@font-face{
+    font-family: Flower;
+    src: url(my_asset/Flower/AdventPro-SemiBold.ttf);
+
+}
+
+@font-face{
+    font-family: Flowers;
+    src: url(my_asset/Flower/SansitaSwashed-Regular.ttf);
+
+}
+
+@font-face{
+    font-family: flower;
+    src: url(my_asset/Flower/SansitaSwashed-light.ttf);
+
+}
+
+@font-face{
+    font-family: flowers;
+    src: url(my_asset/Flower/AdventPro-Thin.ttf);
+
+}
+
