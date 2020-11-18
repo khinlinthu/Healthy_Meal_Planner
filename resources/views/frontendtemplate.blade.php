@@ -17,6 +17,7 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
     <title>Healthy Food</title>
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta charset="utf-8">
@@ -44,10 +45,7 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
 
     <!-- Theme Style -->
     <link rel="stylesheet" href="{{asset('frontend_assets/css/style.css')}}">
-    <!-- <script type="text/javascript" src="{{asset('my_asset/js/custom.js')}}"></script>
-
-
-    <link rel="stylesheet" type="text/css" href="{{asset('my_asset/css/style.css')}}"> -->
+    <link rel="stylesheet" href="{{asset('my_asset/css/myassetstyle.css')}}">
   </head>
   <body>
     
@@ -61,7 +59,7 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
 
           <div class="collapse navbar-collapse" id="navbarsExample05">
             <ul class="navbar-nav ml-auto pl-lg-5 pl-0">
-              <li class="nav-item">
+               <li class="nav-item">
                 <a class="nav-link" href="{{route('main_page')}}">Home</a>
                </li>
                <li class="nav-item"><a class="nav-link" href="{{route('cartpage')}}">Checkout</a></li>
@@ -199,9 +197,9 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
     
 
     <script src="{{asset('frontend_assets/js/main.js')}}"></script>
-
     <script src="{{asset('frontend_assets/js/bootstrap.bundle.min.js')}}"></script>
-    <!-- <script src="{{asset('frontend_assets/js/jquery.min.js')}}"></script> -->
+    <script src="{{asset('my_asset/js/custom.js')}}"></script>
+    <script src="{{asset('my_asset/js/bmi.js')}}"></script>
     
   </body>
 </html>

@@ -13,15 +13,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('frontend.calculate');
-     return view('Backendtemplate');
+
+// Route::get('testing', function () {
+//     return view('frontend.new');
+//      // return view('Backendtemplate');
 
 // Route::get('/', function () {
-//     return view('backendtemplate');
+//     return view('frontend.calculate');
+     
+
+// // Route::get('/', function () {
+// //     return view('backendtemplate');
 
 
-});
+// });
 
 //frontend 
 Route::get('/', 'FrontendController@home')->name('main_page');
@@ -32,7 +37,7 @@ Route::get('calculate','FrontendController@calculate')->name('calculatepage');
 
 Route::get('signin','FrontendController@signin')->name('signinpage');
 
-// Route::get('contact','FrontendController@contact')->name('contactpage');
+Route::get('history','FrontendController@history')->name('history');
 
 Route::get('cartpage','FrontendController@cart')->name('cartpage');
 
@@ -58,5 +63,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::post('getfoodpackage','FrontendController@getFoodPackages')->name('getfoodpackage');
 
-Route::get('back', 'OrderController@back')->name('index');
+
 

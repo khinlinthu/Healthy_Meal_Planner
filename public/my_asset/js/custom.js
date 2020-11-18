@@ -21,14 +21,14 @@
 
                     var ftotal = priceb + pricel + priced ;
 
-                    alert(foodpackagesd);
-                    // alert(priced);
+                    // alert(foodpackagesd);
+                    // console.log(ftotal);
                     // alert(typed);
 
                     var qty =1;
 
 
-                   alert(typed);
+                   // alert(typed);
 
                    
                                     

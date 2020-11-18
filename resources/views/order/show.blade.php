@@ -59,7 +59,7 @@
 
           @elseif($order->status == 1)
             <button class="btn btn-success">Success Order</button>
-            <button class="btn btn-success"><a href="{{route('index')}}"></a>Back</button>
+            
           @endif
         </div>
       </div>
