@@ -172,6 +172,20 @@
               </div>    <!-- Subcategory Title -->
         </div>
 
+        {{-- BMI result --}}
+        <div class="row showdetail">
+          <div class="breakfast" >
+            
+          </div>
+          <div class="lunch"></div>
+          <div class="dinner"></div>
+
+
+          <button class="btn btn-warning mt-1 addtocart">
+             <a href="{{route('cartpage')}}">Order</a>
+          </button>
+        </div>{{-- BMI result --}}
+
       </div>
     </section>
 

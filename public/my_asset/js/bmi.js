@@ -135,7 +135,7 @@
                  html +=`<div class="card border-success mb-3" style="max-width: 18rem;">
                         <div class="card-header" id="typeb">${typeb}</div>
                              <div class="card-body text-success">
-                                <h5 class="card-title" id="codeb">${codenob}</h5>
+                                <h5 class="card-title" id="codeb"><h5 style="display:inline-block;">Codeno : </h5>${codenob}</h5>
                                      <p class="card-text" id="foodpackagesb">${foodpackagesb}</p>
                                      <p class="card-text" id="breakfast">${breakfast}</p>
                                      <p class="card-text" id="priceb"> ${priceb}</p>
