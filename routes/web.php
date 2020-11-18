@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('frontend.calculate');
-     // return view('Backendtemplate');
+     return view('Backendtemplate');
 
 // Route::get('/', function () {
 //     return view('backendtemplate');

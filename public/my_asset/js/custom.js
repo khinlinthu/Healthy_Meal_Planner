@@ -31,8 +31,7 @@
                    alert(typed);
 
                    
-                                      
-    
+                                    
                     var item = {
 
                             foodpackagesb : foodpackagesb ,
@@ -54,11 +53,6 @@
                     };
 
                     console.log(item);
-
-                    // var itemlists = localStorage.getItem("item");
-                    // console.log(itemlists);
-
-                    // console.log(item);
 
                     var itemlists = localStorage.getItem("foodpackage");
                     // console.log(itemlists);
