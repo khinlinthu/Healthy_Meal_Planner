@@ -13,15 +13,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('testing', function () {
-    return view('frontend.new');
-     // return view('Backendtemplate');
+
+// Route::get('testing', function () {
+//     return view('frontend.new');
+//      // return view('Backendtemplate');
 
 // Route::get('/', function () {
-//     return view('backendtemplate');
+//     return view('frontend.calculate');
+     
+
+// // Route::get('/', function () {
+// //     return view('backendtemplate');
 
 
-});
+// });
 
 //frontend 
 Route::get('/', 'FrontendController@home')->name('main_page');
