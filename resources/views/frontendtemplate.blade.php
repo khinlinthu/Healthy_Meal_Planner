@@ -17,8 +17,7 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
-    <title>Healthy Food</title>
+    <title>Healthy food</title>
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -46,13 +45,16 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
     <!-- Theme Style -->
     <link rel="stylesheet" href="{{asset('frontend_assets/css/style.css')}}">
     <link rel="stylesheet" href="{{asset('my_asset/css/myassetstyle.css')}}">
+    <link rel="stylesheet" href="{{asset('my_asset/font.css')}}">
+
+
   </head>
   <body>
     
     <header role="banner">
       <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container">
-          <a class="navbar-brand" href="index.html">Foody</a>
+          <a class="navbar-brand" href="index.html">Healthy Meal Planner</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -90,7 +92,7 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
                   @endauth
             </ul>
 
-            <ul class="navbar-nav ml-auto">
+             <ul class="navbar-nav ml-auto">
               <li class="nav-item cta-btn">
                 <a class="nav-link" href="contact.html">Contact Us</a>
               </li>
@@ -104,7 +106,7 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
     
     @yield('content')
 
-    <footer class="site-footer" role="contentinfo">
+    <footer class="site-footer" role="contentinfo" style="background-color: #fff;">
       <div class="container mb-5">
         <div class="row justify-content-center">
           <div class="col-lg-6 text-center">
@@ -197,7 +199,7 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
     
 
     <script src="{{asset('frontend_assets/js/main.js')}}"></script>
-    <script src="{{asset('frontend_assets/js/bootstrap.bundle.min.js')}}"></script>
+  <!--   <script src="{{asset('frontend_assets/js/bootstrap.bundle.min.js')}}"></script> -->
     <script src="{{asset('my_asset/js/custom.js')}}"></script>
     <script src="{{asset('my_asset/js/bmi.js')}}"></script>
     

@@ -1,4 +1,4 @@
-   
+    
 @extends('frontendtemplate')
 
 @section('content')
@@ -12,9 +12,8 @@
           <div class="container">
             <div class="row slider-text align-items-center justify-content-center">
               <div class="col-md-8 text-center col-sm-12 ">
-                <h1 data-aos="fade-up">Enjoy Your Food at Foody</h1>
-                <p class="mb-5" data-aos="fade-up" data-aos-delay="100">Handcrafted with love by <a href="https://free-template.co" target="_blank">Free-Template.co</a></p>
-                <p data-aos="fade-up" data-aos-delay="200"><a href="#" class="btn btn-white btn-outline-white">Get Started</a></p>
+                <h1 data-aos="fade-up">Enjoy Your Day At Here!</h1>
+                <p data-aos="fade-up" data-aos-delay="200"><a href="#" class="btn btn-white btn-outline-white">Welcome</a></p>
               </div>
             </div>
           </div>
@@ -25,9 +24,8 @@
           <div class="container">
             <div class="row slider-text align-items-center justify-content-center">
               <div class="col-md-8 text-center col-sm-12 ">
-                <h1 data-aos="fade-up">Delecious Food</h1>
-                <p class="mb-5" data-aos="fade-up" data-aos-delay="100">Handcrafted with love by <a href="https://free-template.co" target="_blank">Free-Template.co</a></p>
-                <p data-aos="fade-up" data-aos-delay="200"><a href="#" class="btn btn-white btn-outline-white">Get Started</a></p>
+                <h1 data-aos="fade-up">Delecious and Healthy</h1>
+                <p data-aos="fade-up" data-aos-delay="200"><a href="#" class="btn btn-white btn-outline-white">Welcome</a></p>
               </div>
             </div>
           </div>
@@ -39,7 +37,7 @@
     </div> 
     
 
-    <section class="section bg-light py-5  bottom-slant-gray">
+    <section class="section bg-light py-5  bottom-slant-gray" style="font-family: flowers;">
       <div class="container">
         <div class="row">
           <div class="col-md-6 mb-4 mb-lg-0 col-lg-3 text-left service-block" data-aos="fade-up" data-aos-delay="">
@@ -67,30 +65,117 @@
     </section>
     
 
-    <section class="section pb-0">
+    <section class="section pb-0" style="background-color: #fff; font-family: Flower" >
       <div class="container">
+
         <div class="row mb-5 justify-content-center" data-aos="fade">
             <div class="col-md-7 text-center heading-wrap">
-              <h2 data-aos="fade-up">The Restaurant</h2>
-              <p data-aos="fade-up" data-aos-delay="100">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+              <h2 data-aos="fade-up">We can help you!</h2>
+              <p data-aos="fade-up" data-aos-delay="100">A healthy meal plan provides your body with the nutrients it needs every day, while maintaining your daily calorie goal for weight loss. A healthy meal plan will also lower your risk for heart disease and other health conditions.</br>A healthy meal plan:Emphasizes vegetables, fruits, whole grains, and fat-free or low-fat dairy products Includes lean meats, poultry, fish, beans, eggs, and nuts.</p>
             </div>
-          </div>
-        <div class="row align-items-center">
-          <div class="col-lg-4">
-            <img src="img/dishes_1.jpg" alt="Free website template by Free-Template.co" class="{{asset('frontend_assets/img-fluid about_img_1')}}" data-aos="fade" data-aos-delay="200">
-          </div>
-          <div class="col-lg-4">
-            <img src="img/about_1.jpg" alt="Free website template by Free-Template.co" class="{{asset('frontend_assets/img-fluid about_img_1')}}" data-aos="fade" data-aos-delay="300">
-            <img src="img/about_2.jpg" alt="Free website template by Free-Template.co" class="{{asset('frontend_assets/img-fluid about_img_1')}}" data-aos="fade" data-aos-delay="400">
-          </div>
-          <div class="col-lg-4">
-            <img src="img/dishes_3.jpg" alt="Free website template by Free-Template.co" class="{{asset('frontend_assets/img-fluid about_img_1')}}" data-aos="fade" data-aos-delay="500">
-          </div>
         </div>
+
+        <div class="row align-items-center">
+            <div class="col-lg-4">
+              <img src="{{asset('frontend_assets/img/dishes_1.jpg')}}" alt="Free website template by Free-Template.co" class="img-fluid about_img_1" data-aos="fade" data-aos-delay="200">
+            </div>
+            <div class="col-lg-4">
+              <img src="{{asset('frontend_assets/img/about_1.jpg')}}" alt="Free website template by Free-Template.co" class="img-fluid about_img_1" data-aos="fade" data-aos-delay="300">
+              <img src="{{asset('frontend_assets/img/about_2.jpg')}}" alt="Free website template by Free-Template.co" class="img-fluid about_img_1" data-aos="fade" data-aos-delay="400">
+            </div>
+            <div class="col-lg-4">
+              <img src="{{asset('frontend_assets/img/dishes_3.jpg')}}" alt="Free website template by Free-Template.co" class="img-fluid about_img_1" data-aos="fade" data-aos-delay="500">
+            </div>
+        </div>
+
+        <div class="row">
+             <div class="my-5 bmi">
+
+                    <div class="justify-content-center">
+                      <div class="col-md-12" style="padding-left: 200px;">
+                        <form>
+                            <div class="form-row">
+                                  <div class="col-md-10">
+                                    <p><label>Gender:</label>
+                                   <input type="radio" name="gender" value="male" id="e_male">
+                                   <label>Male</label>
+                                   <input type="radio" name="gender" value="female" id="e_female"> 
+                                   <label>Female</label></p>
+                                   </div>
+                           </div>
+                            <div class="form-row">
+                              <div class="col-md-8" style="margin-top: 10px;">
+                                  <div class="form-group">
+                                    <label class="small mb-1" for="inputName"> Height</label>
+                                    <input class="form-control py-4" id="feet" type="text" placeholder="feet" name="name" />
+                                  </div>
+                              </div>
+                               <div class="col-md-2">
+                                    <div class="form-group">
+                                    <input class="form-control py-4" style="margin-top: 35px;" id="inches" type="text" placeholder="inches" name="name" />
+                                  </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                  <div class="col-md-10">
+                                        <div class="form-group">
+                                          <label class="small mb-1" for="phone">Weight</label>
+                                          <input class="form-control py-4" id="weight" type="text" placeholder="pounds" name="phone" />
+                                        </div>
+                                  </div>
+                            </div>
+                                
+                            <div class="form-row">
+                                <div class="col-md-10">
+                                          <div class="form-group">
+                                            <label class="small mb-1" for="phone">Age</label>
+                                            <input class="form-control py-4" id="age" type="text" placeholder="Enter your age" name="ages" />
+                                          </div>
+                                  </div>
+                            </div>
+
+                            <div class="form-row" >
+                                  <div class="col-md-10" style="margin-top: 10px;">
+                                      <label class="small mt-3" for="phone">How much exercise do you play?</label>
+                                      <select class="form-control select2 form-control-lg" name="menu" id="exercise">
+                                          <option>Sedentary (little or no exercise)</option>
+                                          <option>Lightly active (light exercise/sports 1-3 days/week)</option>
+                                          <option>Moderately active (moderate exercise/sports 3-5 days/week)</option>
+                                          <option>Very active (hard exercise/sports 6-7 days a week)</option>
+                                          <option>Extremely active (very hard exercise/sports & physical job or 2x training)</option>
+                                      </select>
+
+
+
+                                  </div>
+                            </div>
+                            <div class="form-row">
+                                  <div class="col-md-10" style="margin-top: 10px;">
+                                      <label class="small mb-1" for="phone">Weight Target</label>
+                                      <select class="form-control select2 form-control-lg" name="menu" id="w_target">
+                                          <option>Weight-gain</option>
+                                          <option>Weight-loss</option>
+                                          <option>Current-weight</option>
+                                      </select>
+                                  </div>
+                            </div>
+
+                            <div class=" col-md-10 form-group d-flex align-items-center justify-content-between mt-4 mb-0 "  style="margin-top: 20px;">
+                              
+                              <button  type="button" class="btn_register btn btn-secondary mainfullbtncolor btn-block"> Calculate</button>
+
+                            </div>
+                          </form>
+                      </div>
+                    </div>
+              </div>    <!-- Subcategory Title -->
+        </div>
+
       </div>
     </section>
 
-    <section class="section ">
+    <section class="section " style="background-color: #fff;font-family: Flower">
 
       <div class="clearfix mb-5 pb-5">
         <div class="container-fluid mb-5">
@@ -134,7 +219,7 @@
 
     </section> <!-- .section -->
 
-    <section class="section bg-light  top-slant-white bottom-slant-gray">
+    <section class="section bg-light  top-slant-white bottom-slant-gray" style="font-family: Flower;">
 
       <div class="clearfix mb-5 pb-5">
         <div class="container-fluid">
@@ -256,7 +341,7 @@
 
    
 
-    <section class="section relative-higher">
+    <section class="section relative-higher" style="background-color: #fff;font-family: Flower">
 
       <div class="clearfix mb-5 pb-5">
         <div class="container-fluid">
@@ -320,7 +405,7 @@
       </div>
     </section> <!-- .section -->
 
-    <section class="section  bg-light top-slant-white">
+    <section class="section  bg-light top-slant-white" style="font-family: Flower;">
       <div class="clearfix mb-5 pb-5">
         <div class="container-fluid">
           <div class="row" data-aos="fade">
@@ -336,7 +421,7 @@
         <div class="row">
           <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="blog d-block">
-              <a class="bg-image d-block" href="single.html" style="background-image: url('{{asset('frontend_assets/img/dishes_1.jpg')}}');"></a>
+              <a class="bg-image d-block" href="single.html" style="background-image: url('frontend_assets/img/dishes_1.jpg');"></a>
               <div class="text">
                 <h3><a href="single.html">How To Cook Pasta?</a></h3>
                 <p class="sched-time">
@@ -352,7 +437,7 @@
           </div>
           <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="blog d-block">
-              <a class="bg-image d-block" href="single.html" style="background-image: url('{{asset('frontend_assets/img/dishes_2.jpg')}}');"></a>
+              <a class="bg-image d-block" href="single.html" style="background-image: url('frontend_assets/img/dishes_2.jpg');"></a>
               <div class="text">
                 <h3><a href="single.html">How To Cook Pasta?</a></h3>
                 <p class="sched-time">
@@ -370,3 +455,5 @@
       </div>
 
     </section> <!-- .section -->
+
+    @endsection
