@@ -12,34 +12,24 @@
 	
 	<!-- Content -->
 	<div class="container mt-5">
+		
 		<div class="row justify-content-center">
-			@php $i=1; $total=0; @endphp
-              @foreach($order->foodpackages as $foodpackage)
-              <tr>
-                <td>{{$i++}}</td>
-                <td>{{$foodpackage->foodpackages}}</td>
-                <td>{{$foodpackage->price}}</td>
-                <td>{{$foodpackage->pivot->quantity}}</td>
-                <td>{{$foodpackage->price * $foodpackage->pivot->quantity}}</td>
-              </tr>
-              @php $total+= $foodpackage->price * $foodpackage->pivot->quantity; @endphp
-              @endforeach
+			@foreach($orderdetail as $od)
 			<div class="col-sm-4 my-3">
 			    <div class="card orderCard">
-			    	{{-- <div class="ribbon ribbon-top-right <?php if($status == 'Order') {echo "ribbon_pending";} elseif($status == 'Confirm') {echo "ribbon_confirm";} elseif($status == 'Cancel') {echo "ribbon_cancel";} else {echo "ribbon_delivery";} ?>  ">
-			    		<span> <?= $status ?> </span>
-			    	</div> --}}
 			      	<div class="card-body">
-			        	<h5 class="card-title"> </h5>
-			        	<p class="card-text"> Total:  </p>
-
-			        	<a href="javascript:void(0)" class="btn btn-secondary mainfullbtncolor btn-sm orderDetail" >
-							Show Detail
-						</a>
-
+			        	<h5 class="card-title"> {{ Auth::user()->name }}</h5>
+			        	<p class="card-text"> Invoice #: {{$od->codeno}} </p>
+			        	<p class="card-text"> Date: {{$od->orderdate}} </p>
+			        	<p class="card-text"> Foodpackage: {{$od->foodpackages}} </p>
+			        	<p class="card-text"> Weight Target: {{$od->weight_target}} </p>
+			        	<p class="card-text"> Type: {{$od->type}} </p>
+			        	<p class="card-text"> PRICE: {{$od->price}} </p>
+			        	<p class="card-text"> Qty: {{$od->quantity}} </p>
 			      	</div>
 			    </div>
-			</div>
+			</div>	
+			@endforeach		
 		</div>
 	</div>
 

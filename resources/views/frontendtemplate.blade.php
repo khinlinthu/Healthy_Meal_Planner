@@ -83,6 +83,8 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
                       <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                           @csrf
                       </form>
+
+                      <a class="dropdown-item" href="{{route('history')}}">Order History</a>
                   </div>
                  </li>
                   @else
