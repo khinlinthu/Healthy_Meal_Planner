@@ -7,12 +7,12 @@
       <section class="home-slider owl-carousel">
 
 
-        <div class="slider-item" style="background-image: url('frontend_assets/img/hero_1.jpg');">
+        <div class="slider-item" style="background-image: url('my_asset/images/healthy.jpg'); ">
           
           <div class="container">
             <div class="row slider-text align-items-center justify-content-center">
               <div class="col-md-8 text-center col-sm-12 ">
-                <h1 data-aos="fade-up">Enjoy Your Day At Here!</h1>
+                <h1 data-aos="fade-up" style="font-family: squada;">Enjoy Your Day At Here!</h1>
                 <p data-aos="fade-up" data-aos-delay="200"><a href="#" class="btn btn-white btn-outline-white">Welcome</a></p>
               </div>
             </div>
@@ -20,7 +20,7 @@
 
         </div>
 
-        <div class="slider-item" style="background-image: url('frontend_assets/img/hero_2.jpg');">
+        <div class="slider-item" style="background-image: url('my_asset/images/healthy.png');">
           <div class="container">
             <div class="row slider-text align-items-center justify-content-center">
               <div class="col-md-8 text-center col-sm-12 ">
@@ -42,23 +42,23 @@
         <div class="row">
           <div class="col-md-6 mb-4 mb-lg-0 col-lg-3 text-left service-block" data-aos="fade-up" data-aos-delay="">
             <span class="wrap-icon"><span class="flaticon-dinner d-block mb-4"></span></span>
-            <h3 class="mb-2 text-primary">Enjoy Eating</h3>
-            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+            <h3 class="mb-2 text-primary banner">Enjoy Eating</h3>
+            <p class="banner">A small river named Du den flows by their place and supplies it with the necessary regelialia.</p>
           </div>
           <div class="col-md-6 mb-4 mb-lg-0 col-lg-3 text-left service-block" data-aos="fade-up" data-aos-delay="100">
             <span class="wrap-icon"><span class="flaticon-fish d-block mb-4"></span></span>
-            <h3 class="mb-2 text-primary">Fresh Sea Foods</h3>
-            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+            <h3 class="mb-2 text-primary banner">Fresh Sea Foods</h3>
+            <p class="banner">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
           </div>
           <div class="col-md-6 mb-4 mb-lg-0 col-lg-3 text-left service-block" data-aos="fade-up" data-aos-delay="200">
             <span class="wrap-icon"><span class="flaticon-hot-coffee-rounded-cup-on-a-plate-from-side-view d-block mb-4"></span></span>
-            <h3 class="mb-2 text-primary">Cup of Coffees</h3>
-            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+            <h3 class="mb-2 text-primary banner">Cup of Coffees</h3>
+            <p class="banner">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
           </div>
           <div class="col-md-6 mb-4 mb-lg-0 col-lg-3 text-left service-block" data-aos="fade-up" data-aos-delay="300">
             <span class="wrap-icon"><span class="flaticon-meat d-block mb-4"></span></span>
-            <h3 class="mb-2 text-primary">Meat Eaters</h3>
-            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+            <h3 class="mb-2 text-primary banner">Meat Eaters</h3>
+            <p class="banner">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
           </div>
         </div>
       </div>
@@ -70,121 +70,132 @@
 
         <div class="row mb-5 justify-content-center" data-aos="fade">
             <div class="col-md-7 text-center heading-wrap">
-              <h2 data-aos="fade-up">We can help you!</h2>
-              <p data-aos="fade-up" data-aos-delay="100">A healthy meal plan provides your body with the nutrients it needs every day, while maintaining your daily calorie goal for weight loss. A healthy meal plan will also lower your risk for heart disease and other health conditions.</br>A healthy meal plan:Emphasizes vegetables, fruits, whole grains, and fat-free or low-fat dairy products Includes lean meats, poultry, fish, beans, eggs, and nuts.</p>
+              <h2 data-aos="fade-up" class="meal">We can help you!</h2>
+              <p data-aos="fade-up" data-aos-delay="100" class="plan">A healthy meal plan provides your body with the nutrients it needs every day, while maintaining your daily calorie goal for weight loss. A healthy meal plan will also lower your risk for heart disease and other health conditions.</br>A healthy meal plan:Emphasizes vegetables, fruits, whole grains, and fat-free or low-fat dairy products Includes lean meats, poultry, fish, beans, eggs, and nuts.</p>
             </div>
         </div>
 
         <div class="row align-items-center">
             <div class="col-lg-4">
-              <img src="{{asset('frontend_assets/img/dishes_1.jpg')}}" alt="Free website template by Free-Template.co" class="img-fluid about_img_1" data-aos="fade" data-aos-delay="200">
+              <img src="{{asset('frontend_assets/img/noodle.jpg')}}" alt="Free website template by Free-Template.co" class="img-fluid about_img_1" data-aos="fade" data-aos-delay="200" >
             </div>
             <div class="col-lg-4">
-              <img src="{{asset('frontend_assets/img/about_1.jpg')}}" alt="Free website template by Free-Template.co" class="img-fluid about_img_1" data-aos="fade" data-aos-delay="300">
-              <img src="{{asset('frontend_assets/img/about_2.jpg')}}" alt="Free website template by Free-Template.co" class="img-fluid about_img_1" data-aos="fade" data-aos-delay="400">
+              <img src="{{asset('frontend_assets/img/healthy.jpg')}}" alt="Free website template by Free-Template.co" class="img-fluid about_img_1" data-aos="fade" data-aos-delay="300">
+              <img src="{{asset('frontend_assets/img/juice.jpg')}}" alt="Free website template by Free-Template.co" class="img-fluid about_img_1" data-aos="fade" data-aos-delay="400">
             </div>
             <div class="col-lg-4">
-              <img src="{{asset('frontend_assets/img/dishes_3.jpg')}}" alt="Free website template by Free-Template.co" class="img-fluid about_img_1" data-aos="fade" data-aos-delay="500">
+              <img src="{{asset('frontend_assets/img/Greek-Salad.jpg')}}" alt="Free website template by Free-Template.co" class="img-fluid about_img_1" data-aos="fade" data-aos-delay="500">
             </div>
         </div>
 
-        <div class="row">
-             <div class="my-5 bmi">
-
-                    <div class="justify-content-center">
-                      <div class="col-md-12" style="padding-left: 200px;">
-                        <form>
-                            <div class="form-row">
-                                  <div class="col-md-10">
-                                    <p><label>Gender:</label>
-                                   <input type="radio" name="gender" value="male" id="e_male">
-                                   <label>Male</label>
-                                   <input type="radio" name="gender" value="female" id="e_female"> 
-                                   <label>Female</label></p>
-                                   </div>
-                           </div>
-                            <div class="form-row">
-                              <div class="col-md-8" style="margin-top: 10px;">
-                                  <div class="form-group">
-                                    <label class="small mb-1" for="inputName"> Height</label>
-                                    <input class="form-control py-4" id="feet" type="text" placeholder="feet" name="name" />
-                                  </div>
-                              </div>
-                               <div class="col-md-2">
-                                    <div class="form-group">
-                                    <input class="form-control py-4" style="margin-top: 35px;" id="inches" type="text" placeholder="inches" name="name" />
-                                  </div>
-                                </div>
-                            </div>
-
-                            <div class="form-row">
-                                  <div class="col-md-10">
-                                        <div class="form-group">
-                                          <label class="small mb-1" for="phone">Weight</label>
-                                          <input class="form-control py-4" id="weight" type="text" placeholder="pounds" name="phone" />
-                                        </div>
-                                  </div>
-                            </div>
-                                
-                            <div class="form-row">
-                                <div class="col-md-10">
-                                          <div class="form-group">
-                                            <label class="small mb-1" for="phone">Age</label>
-                                            <input class="form-control py-4" id="age" type="text" placeholder="Enter your age" name="ages" />
-                                          </div>
-                                  </div>
-                            </div>
-
-                            <div class="form-row" >
-                                  <div class="col-md-10" style="margin-top: 10px;">
-                                      <label class="small mt-3" for="phone">How much exercise do you play?</label>
-                                      <select class="form-control select2 form-control-lg" name="menu" id="exercise">
-                                          <option>Sedentary (little or no exercise)</option>
-                                          <option>Lightly active (light exercise/sports 1-3 days/week)</option>
-                                          <option>Moderately active (moderate exercise/sports 3-5 days/week)</option>
-                                          <option>Very active (hard exercise/sports 6-7 days a week)</option>
-                                          <option>Extremely active (very hard exercise/sports & physical job or 2x training)</option>
-                                      </select>
-
-
-
-                                  </div>
-                            </div>
-                            <div class="form-row">
-                                  <div class="col-md-10" style="margin-top: 10px;">
-                                      <label class="small mb-1" for="phone">Weight Target</label>
-                                      <select class="form-control select2 form-control-lg" name="menu" id="w_target">
-                                          <option>Weight-gain</option>
-                                          <option>Weight-loss</option>
-                                          <option>Current-weight</option>
-                                      </select>
-                                  </div>
-                            </div>
-
-                            <div class=" col-md-10 form-group d-flex align-items-center justify-content-between mt-4 mb-0 "  style="margin-top: 20px;">
-                              
-                              <button  type="button" class="btn_register btn btn-secondary mainfullbtncolor btn-block"> Calculate</button>
-
-                            </div>
-                          </form>
-                      </div>
-                    </div>
-              </div>    <!-- Subcategory Title -->
-        </div>
-
-        {{-- BMI result --}}
-        <div class="row showdetail">
-          <div class="breakfast" >
-            
+        <div class="row " style="margin-top: 50px;">
+          <div class="col-md-2 gif">
+            <img src="{{asset('frontend_assets/img/boy.gif')}}" height="650px;" style="margin-left: -40px;">
           </div>
-          <div class="lunch"></div>
-          <div class="dinner"></div>
+          <div class="col-md-10" style="padding-left: 360px;">
+              <div class="my-5 bmi" >
+                  <div>
+                        <div class="form-row">
+                                <p><label>Gender:</label>
+                               <input type="radio" name="gender" value="male" id="e_male">
+                               <label>Male</label>
+                               <input type="radio" name="gender" value="female" id="e_female"> 
+                               <label>Female</label></p>
+                        </div>
+                        <div class="form-row">
+                          <div class="col-md-6" >
+                              <div class="form-group">
+                                <label class="small mb-1" for="inputName"> Height</label>
+                                <input class="form-control py-4" id="feet" type="text" placeholder="feet" name="name" />
+                              </div>
+                          </div>
+                           <div class="col-md-2">
+                                <div class="form-group">
+                                <input class="form-control py-4" style="margin-top: 24px;" id="inches" type="text" placeholder="inches" name="name" />
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                              <div class="col-md-8" >
+                                    <div class="form-group">
+                                      <label class="small mb-1" for="phone">Weight</label>
+                                      <input class="form-control py-4" id="weight" type="text" placeholder="pounds" name="phone" />
+                                    </div>
+                              </div>
+                        </div>
+                            
+                        <div class="form-row">
+                            <div class="col-md-8">
+                                      <div class="form-group">
+                                        <label class="small mb-1" for="phone">Age</label>
+                                        <input class="form-control py-4" id="age" type="text" placeholder="Enter your age" name="ages" />
+                                      </div>
+                              </div>
+                        </div>
+
+                        <div class="form-row" >
+                              <div class="col-md-8" style="margin-top: 10px;">
+                                  <label class="small mt-3" for="phone">How much exercise do you play?</label>
+                                  <select class="form-control select2 form-control-lg" name="menu" id="exercise">
+                                      <option>Sedentary (little or no exercise)</option>
+                                      <option>Lightly active (light exercise/sports 1-3 days/week)</option>
+                                      <option>Moderately active (moderate exercise/sports 3-5 days/week)</option>
+                                      <option>Very active (hard exercise/sports 6-7 days a week)</option>
+                                      <option>Extremely active (very hard exercise/sports & physical job or 2x training)</option>
+                                  </select>
 
 
-          <button class="btn btn-warning mt-1 addtocart">
+
+                              </div>
+                        </div>
+                        <div class="form-row">
+                              <div class="col-md-8" style="margin-top: 10px;">
+                                  <label class="small mb-1" for="phone">Weight Target</label>
+                                  <select class="form-control select2 form-control-lg" name="menu" id="w_target">
+                                      <option>Weight-gain</option>
+                                      <option>Weight-loss</option>
+                                      <option>Current-weight</option>
+                                  </select>
+                              </div>
+                        </div>
+
+                        <div class="form-row">
+                          <div class=" col-md-8"style="margin-top: 20px;">
+                          
+                          <button  type="button" class="btn_register btn btn-secondary mainfullbtncolor btn-block results"> Calculate</button>
+
+                        </div>
+                        </div>
+                    
+                  </div>
+                 
+              </div>    <!-- Subcategory Title -->
+           </div>
+        </div>
+          
+         <h2 id="food" style="font-family: istokss; margin-bottom: 20px; text-align: center;;">Foodpackages</h2>
+         <h5 id="title" style="text-align: center;margin-bottom: 50px;"> Your delivery is already here!</h5>
+      
+        <!-- <div class="row result">
+           <label id="results"></label>
+           <label id="results"></label>
+           <label id="results"></label>
+
+        </div> -->
+        <!-- {{-- BMI result --}} -->
+        <div class="row showdetail">
+            
+                 <div class="col-md-4 breakfast" ></div>
+                  <div class=" col-md-4 lunch"></div>
+                  <div class=" col-md-4 dinner"></div>
+       
+
+
+          <button class="btn btn-warning mt-1 addtocart" style="margin-left: 1000px;">
              <a href="{{route('cartpage')}}">Order</a>
           </button>
-        </div>{{-- BMI result --}}
+        </div><!-- {{-- BMI result --}} -->
 
       </div>
     </section>
@@ -195,7 +206,7 @@
         <div class="container-fluid mb-5">
           <div class="row" data-aos="fade">
             <div class="col-md-12 text-center heading-wrap">
-              <h2>Special Menu</h2>
+              <h2>Next Special Menu</h2>
             </div>
           </div>
         </div>
@@ -203,28 +214,28 @@
           <a href="#" class="item-dishes" data-aos="fade-right" data-aos-delay="100">
             <div class="text">
               <p class="dishes-price">$11.50</p>
-              <h2 class="dishes-heading">Organic tomato salad, gorgonzola cheese, capers</h2>
+              <h2 class="dishes-heading fruit">Organic tomato salad, gorgonzola cheese, capers</h2>
             </div>
             <img src="{{asset('frontend_assets/img/dishes_1.jpg')}}" alt="" class="img-fluid">
           </a>
           <a href="#" class="item-dishes" data-aos="fade-right" data-aos-delay="200">
             <div class="text">
               <p class="dishes-price">$12.00</p>
-              <h2 class="dishes-heading">Baked broccoli</h2>
+              <h2 class="dishes-heading fruit">Baked broccoli</h2>
             </div>
             <img src="{{asset('frontend_assets/img/dishes_2.jpg')}}" alt="" class="img-fluid">
           </a>
           <a href="#" class="item-dishes" data-aos="fade-right" data-aos-delay="300">
             <div class="text">
               <p class="dishes-price">$11.00</p>
-              <h2 class="dishes-heading">Spicy meatballs</h2>
+              <h2 class="dishes-heading fruit">Spicy meatballs</h2>
             </div>
             <img src="{{asset('frontend_assets/img/dishes_3.jpg')}}" alt="" class="img-fluid">
           </a>
           <a href="#" class="item-dishes" data-aos="fade-right" data-aos-delay="400">
             <div class="text">
               <p class="dishes-price">$12.00</p>
-              <h2 class="dishes-heading">Eggplant parmigiana</h2>
+              <h2 class="dishes-heading fruit">Eggplant parmigiana</h2>
             </div>
             <img src="{{asset('frontend_assets/img/dishes_4.jpg')}}" alt="" class="img-fluid">
           </a>
@@ -250,20 +261,20 @@
         <div class="row no-gutters">
           <div class="col-md-6">
             <div class="sched d-block d-lg-flex">
-              <div class="bg-image order-2" style="background-image: url('frontend_assets/img/dishes_4.jpg');" data-aos="fade"></div>
+              <div class="bg-image order-2" style="background-image: url('frontend_assets/img/pie1.jpg');" data-aos="fade"></div>
               <div class="text order-1">
-                <h3>Grilled Caesar salad, shaved reggiano</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illo delectus...</p>
+                <h3>Homestyle Chicken Pot Pie</h3>
+                <p  class="fruit">Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
                 <p class="text-primary h3">$12.00</p>
               </div>
               
             </div>
 
             <div class="sched d-block d-lg-flex">
-              <div class="bg-image" style="background-image: url('frontend_assets/img/dishes_1.jpg');" data-aos="fade"></div>
+              <div class="bg-image" style="background-image: url('frontend_assets/img/summer.jpg');" data-aos="fade"></div>
               <div class="text">
-                <h3>Spicy Calamari and beans</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illo delectus...</p>
+                <h3>Summer Fruits breakfast</h3>
+                <p  class="fruit">The weathers getting warmer and the shops are full of plump berries and fruit. </p>
                 <p class="text-primary h3">$12.00</p>
                 
               </div>
@@ -274,10 +285,10 @@
 
           <div class="col-md-6">
             <div class="sched d-block d-lg-flex">
-              <div class="bg-image order-2" style="background-image: url('frontend_assets/img/dishes_2.jpg');" data-aos="fade"></div>
+              <div class="bg-image order-2" style="background-image: url('frontend_assets/img/chicken.jpg'); " data-aos="fade" ></div>
               <div class="text order-1">
-                <h3>Bacon wrapped wild gulf prawns</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illo delectus...</p>
+                <h3>Chicken Salad on  Bread</h3>
+                <p  class="fruit">Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
                 <p class="text-primary h3">$18.00</p>
                 
               </div>
@@ -285,10 +296,10 @@
             </div>
 
             <div class="sched d-block d-lg-flex">
-              <div class="bg-image" style="background-image: url('frontend_assets/img/dishes_3.jpg');" data-aos="fade"></div>
+              <div class="bg-image" style="background-image: url('frontend_assets/img/pie.jpeg');height: 250px;" data-aos="fade"></div>
               <div class="text">
-                <h3>Seared ahi tuna fillet*, honey-ginger sauce</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illo delectus...</p>
+                <h3>Roasted Chicken Pot Pie</h3>
+                <p  class="fruit"> Consisting of roasted meat, roast potatoes or mashed potatoes and stuffing, gravy and mint sauce.</p>
                 <p class="text-primary h3">$16.00</p>
                 
               </div>
@@ -301,20 +312,20 @@
         <div class="row no-gutters">
           <div class="col-md-6">
             <div class="sched d-block d-lg-flex">
-              <div class="bg-image order-2" style="background-image: url('frontend_assets/img/dishes_4.jpg');" data-aos="fade"></div>
+              <div class="bg-image order-2" style="background-image: url('frontend_assets/img/potato.jpg');" data-aos="fade"></div>
               <div class="text order-1">
-                <h3>Grilled Caesar salad, shaved reggiano</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illo delectus...</p>
+                <h3>Baked potato with chicken</h3>
+                <p  class="fruit">It may be served with fillings and condiments such as butter, cheese, sour cream, gravy, baked beans and meat./p>
                 <p class="text-primary h3">$12.00</p>
               </div>
               
             </div>
 
             <div class="sched d-block d-lg-flex">
-              <div class="bg-image" style="background-image: url('frontend_assets/img/dishes_1.jpg');" data-aos="fade"></div>
+              <div class="bg-image" style="background-image: url('frontend_assets/img/green.jpg');" data-aos="fade"></div>
               <div class="text">
-                <h3>Spicy Calamari and beans</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illo delectus...</p>
+                <h3>Chiecken Salad</h3>
+                <p  class="fruit">Chicken salad is any salad with chicken as a main ingredient. Other common ingredients may include mayonnaise, hard-boiled egg etc</p>
                 <p class="text-primary h3">$12.00</p>
                 
               </div>
@@ -325,10 +336,10 @@
 
           <div class="col-md-6">
             <div class="sched d-block d-lg-flex">
-              <div class="bg-image order-2" style="background-image: url('frontend_assets/img/dishes_2.jpg');" data-aos="fade"></div>
+              <div class="bg-image order-2" style="background-image: url('frontend_assets/img/yogurtss.jpg');" data-aos="fade"></div>
               <div class="text order-1">
-                <h3>Bacon wrapped wild gulf prawns</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illo delectus...</p>
+                <h3>Yogurt fruit</h3>
+                <p  class="fruit">Yogurt is a popular dairy product that’s made by the bacterial fermentation of milk.</p>
                 <p class="text-primary h3">$18.00</p>
                 
               </div>
@@ -336,10 +347,12 @@
             </div>
 
             <div class="sched d-block d-lg-flex">
-              <div class="bg-image" style="background-image: url('frontend_assets/img/dishes_3.jpg');" data-aos="fade"></div>
+              <div class="bg-image" style="background-image: url('frontend_assets/img/detox.jpg'); height:300px;" data-aos="fade"></div>
               <div class="text">
-                <h3>Seared ahi tuna fillet*, honey-ginger sauce</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto illo delectus...</p>
+                <h3>Detox water</h3>
+                <p  class="fruit">Detox water is water that has been infused with the flavors of fresh fruits, vegetables or herbs. It’s sometimes referred to as fruit-infused water or fruit-flavored water.
+
+                </p>
                 <p class="text-primary h3">$16.00</p>
                 
               </div>
@@ -353,7 +366,7 @@
       </div>
     </section> <!-- .section -->
 
-   
+
 
     <section class="section relative-higher" style="background-color: #fff;font-family: Flower">
 
@@ -419,55 +432,74 @@
       </div>
     </section> <!-- .section -->
 
-    <section class="section  bg-light top-slant-white" style="font-family: Flower;">
-      <div class="clearfix mb-5 pb-5">
-        <div class="container-fluid">
-          <div class="row" data-aos="fade">
-            <div class="col-md-12 text-center heading-wrap">
-              <h2>Blog</h2>
-              <span class="back-text">Our Blog</span>
-            </div>
-          </div>
-        </div>
-      </div>
+   
 
+    
+    <section class="section  contact pt-5 top-slant-white2 relative-higher bottom-slant-gray" style="background-color: #fff">
+      
       <div class="container">
         <div class="row">
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="blog d-block">
-              <a class="bg-image d-block" href="single.html" style="background-image: url('frontend_assets/img/dishes_1.jpg');"></a>
-              <div class="text">
-                <h3><a href="single.html">How To Cook Pasta?</a></h3>
-                <p class="sched-time">
-                  <span><span class="fa fa-calendar"></span> April 22, 2018</span> <br>
-                </p>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                
-                <p><a href="#" class="btn btn-primary btn-sm">Read More</a></p>
-                
+          <div class="col-lg-6">
+            <form action="#" method="post">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" class="form-control ">
+                </div>
+                <div class="col-md-6 form-group">
+                  <label for="phone">Phone</label>
+                  <input type="text" id="phone" class="form-control ">
+                </div>
               </div>
-              
-            </div>
+              <div class="row">
+                <div class="col-md-12 form-group">
+                  
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" class="form-control ">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 form-group">
+                  <label for="message">Write Message</label>
+                  <textarea name="message" id="message" class="form-control " cols="30" rows="8"></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="submit" value="Send Message" class="btn btn-primary">
+                </div>
+              </div>
+            </form>
           </div>
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="blog d-block">
-              <a class="bg-image d-block" href="single.html" style="background-image: url('frontend_assets/img/dishes_2.jpg');"></a>
-              <div class="text">
-                <h3><a href="single.html">How To Cook Pasta?</a></h3>
-                <p class="sched-time">
-                  <span><span class="fa fa-calendar"></span> April 22, 2018</span> <br>
+          
+          <div class="col-lg-6 pl-2 pl-lg-5">
+
+            <div class="col-md-8 mx-auto contact-form-contact-info">
+              <h4 class="mb-5">Contact Details</h4>
+                <p class="d-flex">
+                  <span class="ion-ios-location icon mr-5"></span>
+                  <span>34 Street Name, City Name Here, United States</span>
                 </p>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                
-                <p><a href="#" class="btn btn-primary btn-sm">Read More</a></p>
-                
+
+                <p class="d-flex">
+                  <span class="ion-ios-telephone icon mr-5"></span>
+                  <span>+1 242 4942 290</span>
+                </p>
+
+                <p class="d-flex">
+                  <span class="ion-android-mail icon mr-5"></span>
+                  <span>info@yourdomain.com</span>
+                </p>
               </div>
-              
-            </div>
+
           </div>
         </div>
       </div>
 
-    </section> <!-- .section -->
+    </section>
 
     @endsection
