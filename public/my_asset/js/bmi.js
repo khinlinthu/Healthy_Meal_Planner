@@ -131,46 +131,46 @@
 
 
                 
-                 // var html = "";
-                 // html +=`<div class="card border-success mb-3" style="max-width: 18rem;">
-                 //        <div class="card-header" id="typeb">${typeb}</div>
-                 //             <div class="card-body text-success">
-                 //                <h5 class="card-title" id="codeb">${codenob}</h5>
-                 //                     <p class="card-text" id="foodpackagesb">${foodpackagesb}</p>
-                 //                     <p class="card-text" id="breakfast">${breakfast}</p>
-                 //                     <p class="card-text" id="priceb"> ${priceb}</p>
-                 //                     <p class="card-text" id="idb">${idb}</p>
-                 //             </div>
-                 //     </div>`;
+                 var html = "";
+                 html +=`<div class="card border-success mb-3" style="max-width: 18rem;">
+                        <div class="card-header" id="typeb">${typeb}</div>
+                             <div class="card-body text-success">
+                                <h5 class="card-title" id="codeb">${codenob}</h5>
+                                     <p class="card-text" id="foodpackagesb">${foodpackagesb}</p>
+                                     <p class="card-text" id="breakfast">${breakfast}</p>
+                                     <p class="card-text" id="priceb"> ${priceb}</p>
+                                     <p class="card-text" id="idb">${idb}</p>
+                             </div>
+                     </div>`;
                 
-                 //     // console.log(html);
-                 //     $('.breakfast').html(html);
+                     // console.log(html);
+                     $('.breakfast').html(html);
 
-                 //     var html1="";
-                 //     html1 +=`<div class="card border-success mb-3" style="max-width: 18rem;">
-                 //        <div class="card-header" id="typel">${typel}</div>
-                 //             <div class="card-body text-success">
-                 //                <h5 class="card-title" id="codel">${codenol}</h5>
-                 //                     <p class="card-text" id="foodpackagesl">${foodpackagesl}</p>
-                 //                     <p class="card-text" id="lunch">${lunch}</p>
-                 //                     <p class="card-text" id="pricel"> ${pricel}</p>
-                 //                     <p class="card-text" id="idl">${idl}</p>
-                 //             </div>
-                 //     </div>`;
-                 //     $('.lunch').html(html1);
+                     var html1="";
+                     html1 +=`<div class="card border-success mb-3" style="max-width: 18rem;">
+                        <div class="card-header" id="typel">${typel}</div>
+                             <div class="card-body text-success">
+                                <h5 class="card-title" id="codel">${codenol}</h5>
+                                     <p class="card-text" id="foodpackagesl">${foodpackagesl}</p>
+                                     <p class="card-text" id="lunch">${lunch}</p>
+                                     <p class="card-text" id="pricel"> ${pricel}</p>
+                                     <p class="card-text" id="idl">${idl}</p>
+                             </div>
+                     </div>`;
+                     $('.lunch').html(html1);
 
-                 //     var html2="";
-                 //     html2 +=`<div class="card border-success mb-3" style="max-width: 18rem;">
-                 //        <div class="card-header" id="typed">${typed}</div>
-                 //             <div class="card-body text-success">
-                 //                <h5 class="card-title" id="coded">${codenod}</h5>
-                 //                     <p class="card-text" id="foodpackagesd">${foodpackagesd}</p>
-                 //                     <p class="card-text" id="dinner">${dinner}</p>
-                 //                     <p class="card-text" id="priced"> ${priced}</p>
-                 //                     <p class="card-text" id="idd">${idd}</p>
-                 //             </div>
-                 //     </div>`;
-                 //     $('.dinner').html(html2);
+                     var html2="";
+                     html2 +=`<div class="card border-success mb-3" style="max-width: 18rem;">
+                        <div class="card-header" id="typed">${typed}</div>
+                             <div class="card-body text-success">
+                                <h5 class="card-title" id="coded">${codenod}</h5>
+                                     <p class="card-text" id="foodpackagesd">${foodpackagesd}</p>
+                                     <p class="card-text" id="dinner">${dinner}</p>
+                                     <p class="card-text" id="priced"> ${priced}</p>
+                                     <p class="card-text" id="idd">${idd}</p>
+                             </div>
+                     </div>`;
+                     $('.dinner').html(html2);
               })
                  
           
