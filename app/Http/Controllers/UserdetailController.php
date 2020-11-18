@@ -35,7 +35,33 @@ class UserdetailController extends Controller
      */
     public function store(Request $request)
     {
-        //
+          // dd($request);
+          $request->validate([
+            "foodpackages"=>"required",
+            "totalCalories"=>"required",
+            "price"=>"required",
+            "discount"=>"sometimes|required",
+            "weight_target"=>"required",
+            "type"=>"required"
+            
+        ]);
+
+
+        $foodpackage = new Foodpackage();
+        $foodpackage->codeno = uniqid();
+        $foodpackage->foodpackages =$request->foodpackages;
+        $foodpackage->totalCalories = $request->totalCalories; 
+        $foodpackage->price = $request->price;
+        $foodpackage->discount = $request->discount;
+        $foodpackage->weight_target=$request->weight_target;
+        $foodpackage->type = $request->type;
+
+        // dd($foodpackage);
+        $foodpackage->save();
+
+
+
+        return redirect()->route('foodpackage.index');
     }
 
     /**
