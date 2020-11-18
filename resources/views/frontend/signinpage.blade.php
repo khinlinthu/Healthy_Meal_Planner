@@ -27,7 +27,7 @@
 
 				<div class="group">
 					<label for="password" class="label">{{ __('Password') }}</label>
-					<input id="pass" type="password" class="input @error('password') is-invalid @enderror" data-type="password" name="password" required autocomplete="current-password">
+					<input id="password" type="password" class="input @error('password') is-invalid @enderror" data-type="password" name="password" required autocomplete="current-password">
 
 					@error('password')
                         <span class="invalid-feedback" role="alert">
@@ -78,7 +78,7 @@
 
 					@error('email')
                         <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
+                        	<strong>{{ $message }}</strong>
                         </span>
                     @enderror
 				</div>
@@ -86,7 +86,7 @@
 
 				<div class="group">
 					<label for="password" class="label">Password</label>
-					<input id="pass" type="password" class="input @error('password') is-invalid @enderror" data-type="password" name="password">
+					<input id="pass" type="password" class="input @error('password') is-invalid @enderror" data-type="password" name="password" required>
 
 					@error('password')
                         <span class="invalid-feedback" role="alert">
@@ -97,7 +97,7 @@
 
 				<div class="group">
 					<label for="password-confirm" class="label">Confirm Password</label>
-					<input id="pass" type="password" class="input" data-type="password" name="password_confirmation">
+					<input id="pass" type="password" class="input" data-type="password" name="password_confirmation" required>
 				</div>
 
 				

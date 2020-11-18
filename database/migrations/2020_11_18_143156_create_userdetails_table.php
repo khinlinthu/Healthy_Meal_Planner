@@ -15,12 +15,6 @@ class CreateUserdetailsTable extends Migration
     {
         Schema::create('userdetails', function (Blueprint $table) {
             $table->id();
-            $table->string('gender');
-            $table->integer('height');
-            $table->integer('weight');
-            $table->integer('age');
-            $table->string('exercise');
-            $table->string('weight_target');
             $table->timestamps();
         });
     }

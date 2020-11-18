@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Foodpackage;
 use App\Order;
+use Illuminate\Support\Facades\DB;
+use Auth;
+
 
 class FrontendController extends Controller
 {
@@ -27,6 +30,7 @@ class FrontendController extends Controller
   	{
     return view('frontend.signinpage');
  	}
+    
     public function getFoodPackages(Request $request)
     {
         $w_target = $request->w_target;
@@ -42,14 +46,23 @@ class FrontendController extends Controller
        ]);
     }
 
-    public function history(Order $order)
+    public function history()
     {
-    return view('order.history',compact('order'));
+        //dd($order->get('user_id'));
+        $id = Auth::id();
+        $orderdetail = DB::table('orderdetails')
+        ->join('orders', 'orderdetails.order_id', '=', 'orders.id')
+        ->join('foodpackages', 'orderdetails.foodpackage_id', '=', 'foodpackages.id')
+        ->where('orders.user_id', $id)
+        ->select('foodpackages.*','orderdetails.quantity as quantity','orders.orderdate as orderdate')
+        ->get();
+        // dd($orderdetail);
+        return view('order.history',compact('orderdetail'));
     }
 
     public function cart($value='')
     {
-    return view('frontend.cartpage');
+        return view('frontend.cartpage');
     }
     
  	

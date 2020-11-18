@@ -29,9 +29,12 @@ use Illuminate\Support\Facades\Route;
 // });
 
 //frontend 
-Route::get('/', 'FrontendController@home')->name('main_page');
 
-// Route::get('about', 'FrontendController@about')->name('aboutpage');
+Route::group(['middleware' => 'prevent-back-history'],function(){
+
+Auth::routes(['register'=>false]);
+
+Route::get('/', 'FrontendController@home')->name('main_page');
 
 Route::get('calculate','FrontendController@calculate')->name('calculatepage');
 
@@ -40,6 +43,9 @@ Route::get('signin','FrontendController@signin')->name('signinpage');
 Route::get('history','FrontendController@history')->name('history');
 
 Route::get('cartpage','FrontendController@cart')->name('cartpage');
+
+Route::get('/home', 'HomeController@index')->name('home');
+});
 
 
 //backend
@@ -56,10 +62,6 @@ Route::resource('user','UserController');
 Route::resource('order', 'OrderController');
 
 Route::post('confirm/{id}', 'OrderController@confirm')->name('order.confirm');
-
-Auth::routes(['register'=>false]);
-
-Route::get('/home', 'HomeController@index')->name('home');
 
 Route::post('getfoodpackage','FrontendController@getFoodPackages')->name('getfoodpackage');
 
