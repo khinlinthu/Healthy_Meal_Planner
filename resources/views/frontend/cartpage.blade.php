@@ -152,9 +152,8 @@
                       <table class="table">
                         <thead>
                           <tr>
-
-                            <th colspan="2"> FoodPackages</th>
-                            <th colspan="3"> Qty</th>
+                            <th colspan="3"> FoodPackages</th>
+                            <th colspan="3"> Day</th>
                             <th>Price</th>
                             <th>Subtotal</th>
 
@@ -178,8 +177,8 @@
                                   Check Out 
                                 </button>
                                 @else
-                                <button class="btn btn-secondary btn-block mainfullbtncolor"> <a href="{{route('signinpage')}}"></a>
-                                   Please Signin 
+                                <button class="btn btn-secondary btn-block mainfullbtncolor"> <a href="{{route('signinpage')}}"> Please Signin </a>
+                                  
                                 </button>
                                 @endrole
                               </td>

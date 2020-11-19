@@ -186,9 +186,9 @@
         <!-- {{-- BMI result --}} -->
         <div class="row showdetail">
             
-                 <div class="col-md-4 breakfast" ></div>
-                  <div class=" col-md-4 lunch"></div>
-                  <div class=" col-md-4 dinner"></div>
+                 <div class="col-md-4 breakfast" style="text-align: center;"></div>
+                  <div class=" col-md-4 lunch" style="text-align: center;"></div>
+                  <div class=" col-md-4 dinner" style="text-align: center;"></div>
        
 
 
