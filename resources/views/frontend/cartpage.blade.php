@@ -149,7 +149,7 @@
                           <tr>
 
                             <th colspan="2"> FoodPackages</th>
-                            <th colspan="3"> Qty</th>
+                            <th colspan="3"> Day</th>
                             <th>Price</th>
                             <th>Subtotal</th>
 
@@ -170,7 +170,7 @@
                                
                                @role('customer')
                                 <button class="btn btn-secondary btn-block mainfullbtncolor"> 
-                                  <a href="{{route('ordersuccess')}}">Check Out</a> 
+                                  Check Out 
                                 </button>
                                 @else
                                 <button class="btn btn-secondary btn-block mainfullbtncolor"> <a href="{{route('signinpage')}}">Please Signin</a>
@@ -313,9 +313,9 @@
             let order = localStorage.getItem('foodpackage'); // JSON String
             console.log(order);
             $.post("{{route('order.store')}}",{order:order,notes:notes},function (response) {
-              alert(response.msg);
+              // alert(response.msg);
               localStorage.clear();
-              location.href="/";
+              location.href="{{route('ordersuccess')}}";
             })
             e.preventDefault();
           }

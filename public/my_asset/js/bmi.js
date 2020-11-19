@@ -142,7 +142,7 @@
                                 <h5 class="card-title" id="codeb">${codenob}</h5>
                                      <p class="card-text" id="foodpackagesb">${foodpackagesb}</p>
                                      <p class="card-text" id="breakfast">${breakfast}</p>
-                                     <p class="card-text" id="priceb"> ${priceb} <h5 style="display:inline-block">MMK</h5></p>
+                                     <p class="card-text" id="priceb"> ${priceb} <em">MMK<em></p>
                                      <p class="card-text" id="idb">${idb}</p>
                              </div>
                      </div>`;
@@ -157,7 +157,7 @@
                                 <h5 class="card-title" id="codel">${codenol}</h5>
                                      <p class="card-text" id="foodpackagesl">${foodpackagesl}</p>
                                      <p class="card-text" id="lunch">${lunch}</p>
-                                     <p class="card-text" id="pricel">${pricel} <h5 style="display:inline-block">MMK</h5></p>
+                                     <p class="card-text" id="pricel">${pricel} <em">MMK</em></p>
                                      <p class="card-text" id="idl">${idl}</p>
                              </div>
                      </div>`;
@@ -170,7 +170,7 @@
                                 <h5 class="card-title" id="coded">${codenod}</h5>
                                      <p class="card-text" id="foodpackagesd">${foodpackagesd}</p>
                                      <p class="card-text" id="dinner">${dinner}</p>
-                                     <p class="card-text" id="priced">${priced} <h5 style="display:inline-block">MMK</h5></p>
+                                     <p class="card-text" id="priced">${priced} <em">MMK</em></p>
                                      <p class="card-text" id="idd">${idd}</p>
                              </div>
                      </div>`;

@@ -160,7 +160,7 @@
 					        	<p class="card-text"> Weight Target: {{$od->weight_target}} </p>
 					        	<p class="card-text"> Type: {{$od->type}} </p>
 					        	<p class="card-text"> PRICE: {{$od->price}} </p>
-					        	<p class="card-text"> Qty: {{$od->quantity}} </p>
+					        	<p class="card-text"> Day: {{$od->quantity}} </p>
 					      	</div>
 					    </div>
 					</div>	

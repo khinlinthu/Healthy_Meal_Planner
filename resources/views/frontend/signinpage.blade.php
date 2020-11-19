@@ -149,22 +149,18 @@
 					<label for="email" class="label">{{ __('E-Mail Address') }}</label>
 					<input id="email" type="email" class="input @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 
-					@error('email')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                    @enderror
+					<div class="form-control-feedback text-danger">
+              {{$errors->first('email')}}
+          </div>
 				</div>
 
 				<div class="group">
 					<label for="password" class="label">{{ __('Password') }}</label>
 					<input id="password" type="password" class="input @error('password') is-invalid @enderror" data-type="password" name="password" required autocomplete="current-password">
 
-					@error('password')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                    @enderror
+					<div class="form-control-feedback text-danger">
+              {{$errors->first('password')}}
+          </div>
 
 				</div>
 
@@ -196,34 +192,25 @@
 				<div class="group form-group">
 					<label for="user" class="label">Username</label>
 					<input id="user" type="text" class="input @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
-
-					@error('name')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                    @enderror
+            <div class="form-control-feedback text-danger">
+              {{$errors->first('name')}}
+            </div>
 				</div>
 				<div class="group">
 					<label for="email" class="label">Email</label>
 					<input id="pass" type="text" class="input @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
-
-					@error('email')
-                        <span class="invalid-feedback" role="alert">
-                        	<strong>{{ $message }}</strong>
-                        </span>
-                    @enderror
+            <div class="form-control-feedback text-danger">
+              {{$errors->first('email')}}
+            </div>
 				</div>
 				
 
 				<div class="group">
 					<label for="password" class="label">Password</label>
 					<input id="pass" type="password" class="input @error('password') is-invalid @enderror" data-type="password" name="password" required>
-
-					@error('password')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                    @enderror
+            <div class="form-control-feedback text-danger">
+              {{$errors->first('password')}}
+            </div>
 				</div>
 
 				<div class="group">
