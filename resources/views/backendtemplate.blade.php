@@ -89,16 +89,16 @@
     <!-- Sidebar menu-->
     <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
     <aside class="app-sidebar">
-      <div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/48.jpg" alt="User Image">
+      <div class="app-sidebar__user">
         <div>
-          <p class="app-sidebar__user-name">Admin</p>
-          <p class="app-sidebar__user-designation"></p>
+
+          <img src="{{asset('frontend_assets/img/person_3.jpg')}}" width="50px;" height="50px;" style="margin-left: 60px;">
+          <p class="app-sidebar__user-name" style="text-align: center; margin-left: 20px;">Admin</p>
+          <p class="app-sidebar__user-designation"style="text-align: center; margin-left: 20px;">Frontend Developer</p>
+
         </div>
       </div>
       <ul class="app-menu">
-        <li><a class="app-menu__item" href="dashboard.html"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">Dashboard</span></a></li>
-
-        
         <li><a class="app-menu__item {{ Request::is('foodpackage*') ? 'active' : '' }}" href="{{route('foodpackage.index')}}"><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">Food Package</span></a></li>
         <li><a class="app-menu__item {{ Request::is('order*') ? 'active' : '' }}" href="{{route('order.index')}}"><i class="app-menu__icon fa fa-pie-chart"></i><span class="app-menu__label">Orders</span></a></li>
                 

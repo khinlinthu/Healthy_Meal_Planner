@@ -141,14 +141,12 @@
                   </div>
 
 
-                <form method="" action="" class="checkout">
                   <div class="row mt-5 shoppingcart_div">
                     <div class="table-responsive">
                       <table class="table">
                         <thead>
                           <tr>
-
-                            <th colspan="2"> FoodPackages</th>
+                            <th colspan="3"> FoodPackages</th>
                             <th colspan="3"> Day</th>
                             <th>Price</th>
                             <th>Subtotal</th>
@@ -173,8 +171,7 @@
                                   Check Out 
                                 </button>
                                 @else
-                                <button class="btn btn-secondary btn-block mainfullbtncolor"> <a href="{{route('signinpage')}}">Please Signin</a>
-                                    
+                                <button class="btn btn-secondary btn-block mainfullbtncolor checkout"> <a href="{{route('signinpage')}}">Please Signin</a>
                                 </button>
                                 @endrole
                               </td>
@@ -185,7 +182,6 @@
                       </div>
                     </div>
 
-                </form>
     
           </div>
           
@@ -244,9 +240,9 @@
               <ul class="list-unstyled footer-link">
                 <li class="d-block">
                   <span class="d-block text-black fruit">Address:</span>
-                  <span  class="fruit">34 Street Name, City Name Here, United States</span></li>
-                <li class="d-block"><span class="d-block text-black fruit">Phone:</span><span  class="fruit">+1 242 4942 290</span></li>
-                <li class="d-block"><span class="d-block text-black fruit">Email:</span><span  class="fruit">info@yourdomain.com</span></li>
+                  <span  class="fruit">Pathein Street,Sancung Yangon</span></li>
+                <li class="d-block"><span class="d-block text-black fruit">Phone:</span><span  class="fruit">+959632899990</span></li>
+                <li class="d-block"><span class="d-block text-black fruit">Email:</span><span  class="fruit">info@healthymealplanner.com</span></li>
               </ul>
             </div>
           </div>
@@ -305,8 +301,10 @@
       });
 
     $(document).ready(function () {
-        $('.checkout').submit(function(e){
+        $('.checkout').click(function(e){
+          // alert("OK");
           let notes = $('.notes').val();
+          console.log(notes);
           if (notes === "") {
             return true;
           }else{

@@ -139,11 +139,13 @@
                  html +=`<div class="card border-dark mb-3" style="max-width: 18rem;">
                         <div class="card-header" id="typeb">${typeb}</div>
                              <div class="card-body text-dark">
-                                <h5 class="card-title" id="codeb">${codenob}</h5>
-                                     <p class="card-text" id="foodpackagesb">${foodpackagesb}</p>
-                                     <p class="card-text" id="breakfast">${breakfast}</p>
-                                     <p class="card-text" id="priceb"> ${priceb} <em">MMK<em></p>
-                                     <p class="card-text" id="idb">${idb}</p>
+
+                                <h5 class="card-title" id="codeb" style ="text-align:center;"><em">Codeno : </em>${codenob}</h5>
+                                     <p class="card-text" id="foodpackagesb" style ="text-align:center;"><em">Food : </em>${foodpackagesb}</p>
+                                     <p class="card-text" id="breakfast" style ="text-align:center;"><em">Calories : </em>${breakfast}<em">cal</em></p>
+                                     <p class="card-text" id="priceb" style ="text-align:center;"> ${priceb} <em">MMK</em></p>
+                                     <p class="card-text" id="idb" style ="text-align:center;"><em">IdNo : </em>${idb}</p>
+
                              </div>
                      </div>`;
                 
@@ -154,11 +156,12 @@
                      html1 +=`<div class="card border-dark mb-3" style="max-width: 18rem;">
                         <div class="card-header" id="typel">${typel}</div>
                              <div class="card-body text-dark">
-                                <h5 class="card-title" id="codel">${codenol}</h5>
-                                     <p class="card-text" id="foodpackagesl">${foodpackagesl}</p>
-                                     <p class="card-text" id="lunch">${lunch}</p>
-                                     <p class="card-text" id="pricel">${pricel} <em">MMK</em></p>
-                                     <p class="card-text" id="idl">${idl}</p>
+
+                                <h5 class="card-title" id="codel" style ="text-align:center;"><em">Codeno : </em>${codenol}</h5>
+                                     <p class="card-text" id="foodpackagesl" style ="text-align:center;"><em">Food : </em>${foodpackagesl}</p>
+                                     <p class="card-text" id="lunch" style ="text-align:center;"><em">Calories : </em>${lunch}<em">cal</em></p>
+                                     <p class="card-text" id="pricel" style ="text-align:center;">${pricel} <em">MMK</em></p>
+                                     <p class="card-text" id="idl" style ="text-align:center;"><em">IdNo : </em>${idl}</p>
                              </div>
                      </div>`;
                      $('.lunch').html(html1);
@@ -167,11 +170,12 @@
                      html2 +=`<div class="card border-dark mb-3" style="max-width: 18rem;">
                         <div class="card-header" id="typed">${typed}</div>
                              <div class="card-body text-dark">
-                                <h5 class="card-title" id="coded">${codenod}</h5>
-                                     <p class="card-text" id="foodpackagesd">${foodpackagesd}</p>
-                                     <p class="card-text" id="dinner">${dinner}</p>
-                                     <p class="card-text" id="priced">${priced} <em">MMK</em></p>
-                                     <p class="card-text" id="idd">${idd}</p>
+
+                                <h5 class="card-title" id="coded" style ="text-align:center;"><em">Codeno : </em>${codenod}</h5>
+                                     <p class="card-text" id="foodpackagesd" style ="text-align:center;"><em">Food : </em>${foodpackagesd}</p>
+                                     <p class="card-text" id="dinner" style ="text-align:center;"><em">Calories : </em>${dinner} <em">cal</em></p>
+                                     <p class="card-text" id="priced" style ="text-align:center;">${priced} <em">MMK</em></p>
+                                     <p class="card-text" id="idd" style ="text-align:center;"><em">IdNo : </em>${idd}</p>
                              </div>
                      </div>`;
                      $('.dinner').html(html2);
