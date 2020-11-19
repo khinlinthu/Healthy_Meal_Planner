@@ -43,22 +43,22 @@
           <div class="col-md-6 mb-4 mb-lg-0 col-lg-3 text-left service-block" data-aos="fade-up" data-aos-delay="">
             <span class="wrap-icon"><span class="flaticon-dinner d-block mb-4"></span></span>
             <h3 class="mb-2 text-primary banner">Enjoy Eating</h3>
-            <p class="banner">A small river named Du den flows by their place and supplies it with the necessary regelialia.</p>
+            <p class="banner">Eating lots of vegetables and fruit. This is one of the most important diet habits.Eating a healthy diet is not about strict limitations, staying unrealistically thin, or depriving yourself of the foods you love.</p>
           </div>
           <div class="col-md-6 mb-4 mb-lg-0 col-lg-3 text-left service-block" data-aos="fade-up" data-aos-delay="100">
             <span class="wrap-icon"><span class="flaticon-fish d-block mb-4"></span></span>
             <h3 class="mb-2 text-primary banner">Fresh Sea Foods</h3>
-            <p class="banner">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+            <p class="banner">All types of fish are good sources of protein and B vitamins.When you need something other than seafood, check out these heart healthy recipes ..</p>
           </div>
           <div class="col-md-6 mb-4 mb-lg-0 col-lg-3 text-left service-block" data-aos="fade-up" data-aos-delay="200">
             <span class="wrap-icon"><span class="flaticon-hot-coffee-rounded-cup-on-a-plate-from-side-view d-block mb-4"></span></span>
             <h3 class="mb-2 text-primary banner">Cup of Coffees</h3>
-            <p class="banner">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+            <p class="banner">A cup of coffee may be just what you need to get going in the morning.A "cup" of coffee in the US is usually 4 fluid ounces (118 ml), brewed using 5 fluid ounces (148 ml) of water. </p>
           </div>
           <div class="col-md-6 mb-4 mb-lg-0 col-lg-3 text-left service-block" data-aos="fade-up" data-aos-delay="300">
             <span class="wrap-icon"><span class="flaticon-meat d-block mb-4"></span></span>
             <h3 class="mb-2 text-primary banner">Meat Eaters</h3>
-            <p class="banner">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+            <p class="banner">Meats such as chicken, pork, lamb and beef are all rich in protein. A balanced diet can include protein from meat and is also one of the main sources of vitamin B12.</p>
           </div>
         </div>
       </div>

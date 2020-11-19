@@ -160,7 +160,7 @@
 					        	<p class="card-text"> Weight Target: {{$od->weight_target}} </p>
 					        	<p class="card-text"> Type: {{$od->type}} </p>
 					        	<p class="card-text"> PRICE: {{$od->price}} </p>
-					        	<p class="card-text"> Qty: {{$od->quantity}} </p>
+					        	<p class="card-text"> Day: {{$od->quantity}} </p>
 					      	</div>
 					    </div>
 					</div>	
@@ -277,9 +277,9 @@
               <ul class="list-unstyled footer-link">
                 <li class="d-block">
                   <span class="d-block text-black fruit">Address:</span>
-                  <span  class="fruit">34 Street Name, City Name Here, United States</span></li>
-                <li class="d-block"><span class="d-block text-black fruit">Phone:</span><span  class="fruit">+1 242 4942 290</span></li>
-                <li class="d-block"><span class="d-block text-black fruit">Email:</span><span  class="fruit">info@yourdomain.com</span></li>
+                  <span  class="fruit">Pathein Street, Sanchung Yangon</span></li>
+                <li class="d-block"><span class="d-block text-black fruit">Phone:</span><span  class="fruit">+95 9457382002</span></li>
+                <li class="d-block"><span class="d-block text-black fruit">Email:</span><span  class="fruit">info@healthymealplanner.com</span></li>
               </ul>
             </div>
           </div>

@@ -149,7 +149,7 @@
 					<div class="col-10 shadow p-3 mb-5 bg-white rounded">
 						<div class="row">
 							<div class="col-4">
-								<img src="my_asset/images/successful.gif" class="img-fluid">
+								<img src="{{asset('my_asset/images/successful.gif')}}" class="img-fluid">
 							</div>
 							<div class="col-8 pt-5">
 								<h1> Your order is complete </h1>
@@ -214,9 +214,9 @@
               <ul class="list-unstyled footer-link">
                 <li class="d-block">
                   <span class="d-block text-black fruit">Address:</span>
-                  <span  class="fruit">34 Street Name, City Name Here, United States</span></li>
-                <li class="d-block"><span class="d-block text-black fruit">Phone:</span><span  class="fruit">+1 242 4942 290</span></li>
-                <li class="d-block"><span class="d-block text-black fruit">Email:</span><span  class="fruit">info@yourdomain.com</span></li>
+                  <span  class="fruit">Pathein Street, Sanchung Yangon</span></li>
+                <li class="d-block"><span class="d-block text-black fruit">Phone:</span><span  class="fruit">+959672873873</span></li>
+                <li class="d-block"><span class="d-block text-black fruit">Email:</span><span  class="fruit">info@healthymealplanner.com</span></li>
               </ul>
             </div>
           </div>

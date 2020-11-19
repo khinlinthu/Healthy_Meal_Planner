@@ -16,7 +16,11 @@
       <div class="col-md-12">
         <div class="tile">
           <h2>Order Detail</h2>
-
+            <div class="col-2" style="margin-left: 850px;margin-top:-35px;display: inline-block;">
+          <a href="{{route('order.index')}}" class="btn btn-outline-primary btn-block float-right"> 
+                  <i class="fa fa-backward pr-2"></i> Go Back 
+                </a>
+        </div>
           <p>Orderno: {{$order->orderno}}</p>
           <p>Orderdate: {{$order->orderdate}}</p>
           <p>Customer: {{$order->user->name}}</p>

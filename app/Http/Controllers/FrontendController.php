@@ -50,6 +50,7 @@ class FrontendController extends Controller
     {
         //dd($order->get('user_id'));
         $id = Auth::id();
+        // dd($id);
         $orderdetail = DB::table('orderdetails')
         ->join('orders', 'orderdetails.order_id', '=', 'orders.id')
         ->join('foodpackages', 'orderdetails.foodpackage_id', '=', 'foodpackages.id')

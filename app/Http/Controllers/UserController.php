@@ -58,7 +58,7 @@ class UserController extends Controller
         $user->assignRole('customer');
 
         //redirect
-        return redirect()->route('mainpage');
+        return redirect()->route('signinpage');
     }
 
     /**
