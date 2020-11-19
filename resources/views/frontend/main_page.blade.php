@@ -185,18 +185,11 @@
         </div> -->
         <!-- {{-- BMI result --}} -->
         <div class="row showdetail">
-            
-<<<<<<< HEAD
-                 <div class="col-md-4 breakfast" style="text-align: center"></div>
-                  <div class=" col-md-4 lunch" style="text-align: center"></div>
-                  <div class=" col-md-4 dinner" style="text-align: center"></div>
-=======
+
                  <div class="col-md-4 breakfast" style="text-align: center;"></div>
                   <div class=" col-md-4 lunch" style="text-align: center;"></div>
                   <div class=" col-md-4 dinner" style="text-align: center;"></div>
->>>>>>> ea9ac3a762afcd9457bc4f10a772af71d1258882
        
-
 
           <button class="btn btn-warning mt-1 addtocart" style="margin-left: 1000px;">
              <a href="{{route('cartpage')}}">Order</a>
@@ -482,17 +475,17 @@
               <h4 class="mb-5">Contact Details</h4>
                 <p class="d-flex">
                   <span class="ion-ios-location icon mr-5"></span>
-                  <span>34 Street Name, City Name Here, United States</span>
+                  <span>Pathein Street, Sanchung Yangon</span>
                 </p>
 
                 <p class="d-flex">
                   <span class="ion-ios-telephone icon mr-5"></span>
-                  <span>+1 242 4942 290</span>
+                  <span>+95 9457382002</span>
                 </p>
 
                 <p class="d-flex">
                   <span class="ion-android-mail icon mr-5"></span>
-                  <span>info@yourdomain.com</span>
+                  <span>info@healthymealplanner.com</span>
                 </p>
               </div>
 

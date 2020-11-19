@@ -28,7 +28,7 @@
                     var qty =1;
 
 
-                   // alert(typed);
+                   alert(idd);
 
                    
                                     

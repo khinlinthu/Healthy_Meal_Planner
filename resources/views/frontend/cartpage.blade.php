@@ -140,7 +140,7 @@
                     </div>
                   </div>
 
-
+                <form method="" action="" class="checkout">
                   <div class="row mt-5 shoppingcart_div">
                     <div class="table-responsive">
                       <table class="table">
@@ -182,7 +182,7 @@
                       </div>
                     </div>
 
-    
+              </form>
           </div>
           
         </div>
@@ -301,17 +301,17 @@
       });
 
     $(document).ready(function () {
-        $('.checkout').click(function(e){
+        $('.checkout').submit(function(e){
           // alert("OK");
           let notes = $('.notes').val();
-          console.log(notes);
+          // console.log(notes);
           if (notes === "") {
             return true;
           }else{
             let order = localStorage.getItem('foodpackage'); // JSON String
             console.log(order);
             $.post("{{route('order.store')}}",{order:order,notes:notes},function (response) {
-              // alert(response.msg);
+              // console.log(response);
               localStorage.clear();
               location.href="{{route('ordersuccess')}}";
             })
