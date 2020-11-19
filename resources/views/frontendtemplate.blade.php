@@ -47,7 +47,8 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
     <link rel="stylesheet" href="{{asset('frontend_assets/css/style.css')}}">
     <link rel="stylesheet" href="{{asset('my_asset/css/myassetstyle.css')}}">
     <link rel="stylesheet" href="{{asset('my_asset/font.css')}}">
-
+   <!--  <link rel="stylesheet" href="{{asset('frontend_assets/fonts/fontawesome/css/all.min.css')}}">
+ -->
 
   </head>
   <body>
@@ -55,13 +56,17 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
     <header role="banner">
       <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container">
-          <a class="navbar-brand" href="index.html">Healthy Meal Planner</a>
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item cta-btn ">
+                <a class="nav-link" href="" >Healthy Meal Planner</a>
+              </li>
+            </ul>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
 
           <div class="collapse navbar-collapse" id="navbarsExample05">
-            <ul class="navbar-nav ml-auto pl-lg-5 pl-0">
+            <ul class="navbar-nav ml-auto pl-lg-5 pl-0 healthy">
                <li class="nav-item">
                 <a class="nav-link" href="{{route('main_page')}}">Home</a>
                </li>
@@ -95,11 +100,11 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
                   @endauth
             </ul>
 
-             <ul class="navbar-nav ml-auto">
+             <!-- <ul class="navbar-nav ml-auto">
               <li class="nav-item cta-btn">
-                <a class="nav-link" href="contact.html">Contact Us</a>
+                <a class="nav-link" href=".contact">Contact Us</a>
               </li>
-            </ul>
+            </ul> -->
             
           </div>
         </div>
@@ -116,7 +121,6 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
             <div class="row">
               <div class="col-md-12 mb-3">
                 <h3>Subsribe Newsletter</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ex temporibus magni ipsam inventore dolorum sunt, amet vel.</p>
               </div>
 
               <form action="" class="col-12 mb-5">
@@ -137,7 +141,7 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
         <div class="row mb-5">
           <div class="col-md-4 mb-5">
             <h3>About Us</h3>
-            <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus et dolor blanditiis consequuntur ex voluptates perspiciatis omnis unde minima expedita.</p>
+            <p class="mb-5 fruit">A healthy meal plan will also lower your risk for heart disease and other health conditions.</br>A healthy meal plan:Emphasizes vegetables, fruits, whole grains, and fat-free or low-fat dairy products Includes lean meats, poultry, fish, beans, eggs, and nuts.</p>
             <ul class="list-unstyled footer-link d-flex footer-social">
               <li><a href="#" class="p-2"><span class="fa fa-twitter"></span></a></li>
               <li><a href="#" class="p-2"><span class="fa fa-facebook"></span></a></li>
@@ -149,26 +153,26 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
           <div class="col-md-5 mb-5">
             <div class="mb-5">
               <h3>Opening Hours</h3>
-              <p><strong class="d-block font-weight-normal text-black">Sunday-Thursday</strong> 5AM - 10PM</p>
+              <p class="fruit"><strong class="d-block font-weight-normal text-black">Sunday-Thursday</strong> 5AM - 10PM</p>
             </div>
             <div>
               <h3>Contact Info</h3>
               <ul class="list-unstyled footer-link">
                 <li class="d-block">
-                  <span class="d-block text-black">Address:</span>
-                  <span>34 Street Name, City Name Here, United States</span></li>
-                <li class="d-block"><span class="d-block text-black">Phone:</span><span>+1 242 4942 290</span></li>
-                <li class="d-block"><span class="d-block text-black">Email:</span><span>info@yourdomain.com</span></li>
+                  <span class="d-block text-black fruit">Address:</span>
+                  <span  class="fruit">34 Street Name, City Name Here, United States</span></li>
+                <li class="d-block"><span class="d-block text-black fruit">Phone:</span><span  class="fruit">+1 242 4942 290</span></li>
+                <li class="d-block"><span class="d-block text-black fruit">Email:</span><span  class="fruit">info@yourdomain.com</span></li>
               </ul>
             </div>
           </div>
           <div class="col-md-3 mb-5">
             <h3>Quick Links</h3>
             <ul class="list-unstyled footer-link">
-              <li><a href="#">About</a></li>
-              <li><a href="#">Terms of Use</a></li>
-              <li><a href="#">Disclaimers</a></li>
-              <li><a href="#">Contact</a></li>
+              <li  class="fruit"><a href="#">About</a></li>
+              <li  class="fruit"><a href="#">Terms of Use</a></li>
+              <li  class="fruit"><a href="#">Disclaimers</a></li>
+              <li  class="fruit"><a href="#">Contact</a></li>
             </ul>
           </div>
           <div class="col-md-3">
@@ -179,7 +183,7 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
           <div class="col-12 text-md-center text-left">
             <p>
               <!-- Link back to Free-Template.co can't be removed. Template is licensed under CC BY 3.0. -->
-          <small class="block">&copy; 2019 <strong class="text-black">Foody</strong> Free Template. All Rights Reserved. <br> Design by <a href="https://free-template.co/" target="_blank">Free-Template.co</a></small> 
+          <small class="block">&copy; 2020 <strong class="text-black">Healthy Meal Planner</strong></small> 
           </p>
           </div>
         </div>
@@ -207,6 +211,8 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
   <!--   <script src="{{asset('frontend_assets/js/bootstrap.bundle.min.js')}}"></script> -->
     <script src="{{asset('my_asset/js/custom.js')}}"></script>
     <script src="{{asset('my_asset/js/bmi.js')}}"></script>
+    <script src="{{asset('my_asset/js/shopcart.js')}}"></script>
+
     @yield('script')
   </body>
 </html>

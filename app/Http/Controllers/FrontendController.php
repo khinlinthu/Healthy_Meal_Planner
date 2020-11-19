@@ -21,9 +21,9 @@ class FrontendController extends Controller
     	return view('frontend.about');
     }
 
-    public function calculate($value='')
+    public function success($value='')
     {
-    	return view('frontend.calculate');
+    	return view('order.ordersuccess');
     }
 
    	public function signin($value='')

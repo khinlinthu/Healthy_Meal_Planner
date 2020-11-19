@@ -14,13 +14,15 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
 
 ////////////////////////////////////////////////////////////////
 */
+
+
 html {
   overflow-x: hidden;
 }
 
 body {
   background: #fff;
-  font-family: "Open Sans", Arial, sans-serif;
+  /*font-family: "Open Sans", Arial, sans-serif;*/
   font-weight: 400;
   font-size: 15px;
   line-height: 1.8;
@@ -1201,7 +1203,7 @@ header .navbar .cta-btn a:hover {
 .list-unstyled.check li:before {
   color: #5AC8D8;
   left: 0;
-  font-family: "Ionicons";
+ /* font-family: "Ionicons";*/
   content: "\f122";
   position: absolute;
 }
@@ -1747,4 +1749,42 @@ header .navbar .cta-btn a:hover {
 .categories li.active a, .sidelink li.active a {
   color: #000;
   font-style: italic;
+}
+
+
+
+
+.healthy li a{
+  font-family: Anton;
+}
+
+.banner{
+  font-family: hindi;
+  line-height: 22px;
+  font-weight: 100;
+
+}
+
+.meal{
+  font-family: istokss;
+
+}
+
+.plan{
+  font-family: hindi;
+  line-height: 25px;
+  font-weight: 100;
+}
+
+.fruit{
+  font-family: hindi;
+  line-height: 25px;
+  font-weight: 100;
+}
+f
+
+.fruit li{
+  font-family: hindi;
+  line-height: 25px;
+  font-weight: 100;
 }
