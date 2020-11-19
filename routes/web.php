@@ -36,7 +36,7 @@ Auth::routes(['register'=>false]);
 
 Route::get('/', 'FrontendController@home')->name('main_page');
 
-Route::get('calculate','FrontendController@calculate')->name('calculatepage');
+Route::get('ordersuccess','FrontendController@success')->name('ordersuccess');
 
 Route::get('signin','FrontendController@signin')->name('signinpage');
 

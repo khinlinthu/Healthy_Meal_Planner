@@ -140,7 +140,7 @@
 			<!-- Subcategory Title -->
 			<div class="jumbotron jumbotron-fluid subtitle">
 		  		<div class="container">
-		    		<h1 class="text-center text-white"> Order History </h1>
+		    		<h1 class="text-center"> Order History </h1>
 		  		</div>
 			</div>
 			

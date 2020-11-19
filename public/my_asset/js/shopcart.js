@@ -15,8 +15,8 @@
             console.log(order);
             $.post("{{route('order.store')}}",{order:order,notes:notes},function (response) {
               alert(response.msg);
-              // localStorage.clear();
-              // location.href="/";
+              localStorage.clear();
+              location.href="/";
             })
             e.preventDefault();
           }

@@ -1,6 +1,5 @@
     
-<!DOCTYPE html>
-<html lang="en">
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -86,11 +85,7 @@
                   @endauth
             </ul>
 
-             <!-- <ul class="navbar-nav ml-auto">
-              <li class="nav-item cta-btn">
-                <a class="nav-link" href=".contact">Contact Us</a>
-              </li>
-            </ul> -->
+          
             
           </div>
         </div>
@@ -138,7 +133,7 @@
           <div class="col-lg-12">
                   <div class="row mt-5 shoppingcart_div">
                     <div class="col-12">
-                      <a href="index.php" class="btn mainfullbtncolor btn-outline-secondary float-right px-3" > 
+                      <a href="{{route('main_page')}}" class="btn mainfullbtncolor btn-outline-secondary float-right px-3" > 
                         <i class="icofont-shopping-cart"></i>
                         Continue Shopping 
                       </a>
@@ -174,11 +169,10 @@
                                
                                @role('customer')
                                 <button class="btn btn-secondary btn-block mainfullbtncolor"> 
-                                  Check Out 
+                                  <a href="{{route('ordersuccess')}}">Check Out</a> 
                                 </button>
                                 @else
-                                <button class="btn btn-secondary btn-block mainfullbtncolor"> <a href="{{route('signinpage')}}"> Please Signin </a>
-                                  
+                                <button class="btn btn-secondary btn-block mainfullbtncolor"> <a href="{{route('signinpage')}}">Please Signin</a>
                                 </button>
                                 @endrole
                               </td>
@@ -195,6 +189,8 @@
           
         </div>
       </div>
+
+   
 
     </section>
  
@@ -316,8 +312,8 @@
             console.log(order);
             $.post("{{route('order.store')}}",{order:order,notes:notes},function (response) {
               alert(response.msg);
-              // localStorage.clear();
-              // location.href="/";
+              localStorage.clear();
+              location.href="/";
             })
             e.preventDefault();
           }

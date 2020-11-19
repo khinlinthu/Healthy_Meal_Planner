@@ -91,9 +91,11 @@
     <aside class="app-sidebar">
       <div class="app-sidebar__user">
         <div>
+
           <img src="{{asset('frontend_assets/img/person_3.jpg')}}" width="50px;" height="50px;" style="margin-left: 60px;">
           <p class="app-sidebar__user-name" style="text-align: center; margin-left: 20px;">Admin</p>
           <p class="app-sidebar__user-designation"style="text-align: center; margin-left: 20px;">Frontend Developer</p>
+
         </div>
       </div>
       <ul class="app-menu">

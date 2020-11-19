@@ -1,6 +1,3 @@
-    
-<!DOCTYPE html>
-<html lang="en">
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -26,17 +23,18 @@
 
 
     <link rel="stylesheet" href="{{asset('frontend_assets/fonts/ionicons/css/ionicons.min.css')}}">
-    <link rel="stylesheet" href="{{asset('frontend_assets/fonts/fontawesome/css/font-awesome.min.css')}}">
+ <!--    <link rel="stylesheet" href="{{asset('frontend_assets/fonts/fontawesome/css/font-awesome.min.css')}}"> -->
     <link rel="stylesheet" href="{{asset('frontend_assets/fonts/flaticon/font/flaticon.css')}}">
 
     <!-- Theme Style -->
     <link rel="stylesheet" href="{{asset('frontend_assets/css/style.css')}}">
     <link rel="stylesheet" href="{{asset('my_asset/css/myassetstyle.css')}}">
     <link rel="stylesheet" href="{{asset('my_asset/font.css')}}">
-   <!--  <link rel="stylesheet" href="{{asset('frontend_assets/fonts/fontawesome/css/all.min.css')}}">
- -->
+    <link rel="stylesheet" href="{{asset('my_asset/fontawesome/css/all.min.css')}}">
+
 
   </head>
+
   <body>
     
     <header role="banner">
@@ -86,11 +84,7 @@
                   @endauth
             </ul>
 
-             <!-- <ul class="navbar-nav ml-auto">
-              <li class="nav-item cta-btn">
-                <a class="nav-link" href=".contact">Contact Us</a>
-              </li>
-            </ul> -->
+          
             
           </div>
         </div>
@@ -129,79 +123,52 @@
 
       </section>
     <!-- END slider -->
-    </div> 
+    </div>
 
-    <section class="section  pt-5 top-slant-white2 relative-higher bottom-slant-gray">
+<!-- Subcategory Title -->
+
+
+<section class="section  pt-5 top-slant-white2 relative-higher bottom-slant-gray" style="background-color: #fff">
       
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-                  <div class="row mt-5 shoppingcart_div">
-                    <div class="col-12">
-                      <a href="index.php" class="btn mainfullbtncolor btn-outline-secondary float-right px-3" > 
-                        <i class="icofont-shopping-cart"></i>
-                        Continue Shopping 
-                      </a>
-                    </div>
-                  </div>
+          			    
+			<!-- Subcategory Title -->
+			<div class="jumbotron jumbotron-fluid subtitle">
+		  		<div class="container">
+		    		<h1 class="text-center "> Order Received </h1>
+		  		</div>
+			</div>
+			
+			
+			<!-- Content -->
+			<div class="container my-5">
 
+				<div class="row justify-content-center">
+					<div class="col-10 shadow p-3 mb-5 bg-white rounded">
+						<div class="row">
+							<div class="col-4">
+								<img src="my_asset/images/successful.gif" class="img-fluid">
+							</div>
+							<div class="col-8 pt-5">
+								<h1> Your order is complete </h1>
+								<p> You order will be delivered in 4 days. </p>
+							</div>
+						</div>
+						
+					</div>
 
-                <form method="" action="" class="checkout">
-                  <div class="row mt-5 shoppingcart_div">
-                    <div class="table-responsive">
-                      <table class="table">
-                        <thead>
-                          <tr>
-
-                            <th colspan="2"> FoodPackages</th>
-                            <th colspan="3"> Qty</th>
-                            <th>Price</th>
-                            <th>Subtotal</th>
-
-                          </tr>
-                        </thead>
-                          <tbody id="shoppingcart_table">
-                            
-
-                          </tbody>
-                        
-                          <tfoot id="shoppingcart_tfoot">
-                            
-                            <tr> 
-                              <td colspan="5"> 
-                                <textarea class="form-control notes" placeholder="Any Request..." required></textarea>
-                              </td>
-                              <td colspan="3">
-                               
-                               @role('customer')
-                                <button class="btn btn-secondary btn-block mainfullbtncolor"> 
-                                  Check Out 
-                                </button>
-                                @else
-                                <button class="btn btn-secondary btn-block mainfullbtncolor"> <a href="{{route('signinpage')}}"></a>
-                                   Please Signin 
-                                </button>
-                                @endrole
-                              </td>
-
-                            </tr>
-                          </tfoot>
-                        </table>
-                      </div>
-                    </div>
-
-                </form>
-    
+				</div>
+			</div>
           </div>
-          
         </div>
       </div>
 
     </section>
- 
+	
 
-
-    <footer class="site-footer" role="contentinfo" style="background-color: #fff;">
+	<footer class="site-footer" role="contentinfo" style="background-color: #fff;">
       <div class="container mb-5">
         <div class="row justify-content-center">
           <div class="col-lg-6 text-center">
@@ -300,29 +267,3 @@
     <script src="{{asset('my_asset/js/bmi.js')}}"></script>
 </body>
 </html>
-  <script type="text/javascript">
-    $.ajaxSetup({
-          headers: {
-              'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-          }
-      });
-
-    $(document).ready(function () {
-        $('.checkout').submit(function(e){
-          let notes = $('.notes').val();
-          if (notes === "") {
-            return true;
-          }else{
-            let order = localStorage.getItem('foodpackage'); // JSON String
-            console.log(order);
-            $.post("{{route('order.store')}}",{order:order,notes:notes},function (response) {
-              alert(response.msg);
-              localStorage.clear();
-              location.href="/";
-            })
-            e.preventDefault();
-          }
-        })
-      })
-    </script>
- 
