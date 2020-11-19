@@ -128,18 +128,6 @@
                                         
 
                     alert("You need to eat" + " " + (BtotalgramToEat + "g " + "for breakfast and ") +" "+(LtotalgramToEat + "g " + "for lunch and")+" "+(DtotalgramToEat + "g " + "for dinner "));
-                    
-                    // var html4 = "";
-                    // html4 +=`
-                    //    <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
-                    //         <div class="card-header">Your Result</div>
-                    //         <div class="card-body">
-                    //           <p class="card-text"><h5 style = 'display:inline-block;'>Breakfast for</h5>${BtotalgramToEat} <h5 style = 'display:inline-block;'> g</h5></p>
-                    //           <p class="card-text"><h5 style = 'display:inline-block;'>Lunch for </h5>${LtotalgramToEat} <h5 style = 'display:inline-block;'>g</h5></p>
-                    //           <p class="card-text"><h5 style = 'display:inline-block;'>Dinner for </h5>${DtotalgramToEat} <h5 style = 'display:inline-block;'>g</h5></p>
-                    //         </div>
-                    //     </div> `;
-                    //     $('.results').html(html4);
 
                     $(".bmi").hide();
                     $(".showdetail").show();
@@ -149,13 +137,13 @@
                 
                  var html = "";
                  html +=`<div class="card border-dark mb-3" style="max-width: 18rem;">
-                        <div class="card-header" id="typeb"><p style="text-align:center;">${typeb}</p></div>
+                        <div class="card-header" id="typeb">${typeb}</div>
                              <div class="card-body text-dark">
-                                <h5 class="card-title" id="codeb"><h5 style="display:inline-block;">Codeno : </h5>${codenob}</h5>
-                                     <p class="card-text" id="foodpackagesb"><h5 style="display:inline-block;">Food : </h5>${foodpackagesb}</p>
-                                     <p class="card-text" id="breakfast"><h5 style="display:inline-block;">Totalcalories : </h5>${breakfast}</p>
-                                     <p class="card-text" id="priceb"><h5 style="display:inline-block;">Price : </h5> ${priceb} <h5 style="display:inline-block">MMK</h5></p>
-                                     <p class="card-text" id="idb"><h5 style="display:inline-block;">IdNo : </h5>${idb}</p>
+                                <h5 class="card-title" id="codeb">${codenob}</h5>
+                                     <p class="card-text" id="foodpackagesb">${foodpackagesb}</p>
+                                     <p class="card-text" id="breakfast">${breakfast}</p>
+                                     <p class="card-text" id="priceb"> ${priceb} <h5 style="display:inline-block">MMK</h5></p>
+                                     <p class="card-text" id="idb">${idb}</p>
                              </div>
                      </div>`;
                 
@@ -164,26 +152,26 @@
 
                      var html1="";
                      html1 +=`<div class="card border-dark mb-3" style="max-width: 18rem;">
-                        <div class="card-header" id="typeb"><p style="text-align:center;">${typel}</p></div>
+                        <div class="card-header" id="typel">${typel}</div>
                              <div class="card-body text-dark">
-                                <h5 class="card-title" id="codeb"><h5 style="display:inline-block;">Codeno : </h5>${codenol}</h5>
-                                     <p class="card-text" id="foodpackagesb"><h5 style="display:inline-block;">Food : </h5>${foodpackagesl}</p>
-                                     <p class="card-text" id="breakfast"><h5 style="display:inline-block;">Totalcalories : </h5>${lunch}</p>
-                                     <p class="card-text" id="priceb"><h5 style="display:inline-block;">Price : </h5> ${pricel} <h5 style="display:inline-block">MMK</h5></p>
-                                     <p class="card-text" id="idb"><h5 style="display:inline-block;">IdNo : </h5>${idl}</p>
+                                <h5 class="card-title" id="codel">${codenol}</h5>
+                                     <p class="card-text" id="foodpackagesl">${foodpackagesl}</p>
+                                     <p class="card-text" id="lunch">${lunch}</p>
+                                     <p class="card-text" id="pricel">${pricel} <h5 style="display:inline-block">MMK</h5></p>
+                                     <p class="card-text" id="idl">${idl}</p>
                              </div>
                      </div>`;
                      $('.lunch').html(html1);
 
                      var html2="";
                      html2 +=`<div class="card border-dark mb-3" style="max-width: 18rem;">
-                        <div class="card-header" id="typeb"><p style="text-align:center;">${typed}</p></div>
+                        <div class="card-header" id="typed">${typed}</div>
                              <div class="card-body text-dark">
-                                <h5 class="card-title" id="codeb"><h5 style="display:inline-block;">Codeno : </h5>${codenod}</h5>
-                                     <p class="card-text" id="foodpackagesb"><h5 style="display:inline-block;">Food : </h5>${foodpackagesd}</p>
-                                     <p class="card-text" id="breakfast"><h5 style="display:inline-block;">Totalcalories : </h5>${dinner}</p>
-                                     <p class="card-text" id="priceb"><h5 style="display:inline-block;">Price : </h5> ${priced} <h5 style="display:inline-block">MMK</h5></p>
-                                     <p class="card-text" id="idb"><h5 style="display:inline-block;">IdNo : </h5>${idd}</p>
+                                <h5 class="card-title" id="coded">${codenod}</h5>
+                                     <p class="card-text" id="foodpackagesd">${foodpackagesd}</p>
+                                     <p class="card-text" id="dinner">${dinner}</p>
+                                     <p class="card-text" id="priced">${priced} <h5 style="display:inline-block">MMK</h5></p>
+                                     <p class="card-text" id="idd">${idd}</p>
                              </div>
                      </div>`;
                      $('.dinner').html(html2);

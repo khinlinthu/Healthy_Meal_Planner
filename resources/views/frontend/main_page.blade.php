@@ -197,6 +197,11 @@
           </button>
         </div><!-- {{-- BMI result --}} -->
 
+
+  
+
+        
+
       </div>
     </section>
 
@@ -374,7 +379,7 @@
         <div class="container-fluid">
           <div class="row" data-aos="fade">
             <div class="col-md-12 text-center heading-wrap">
-              <h2>Testimonial</h2>
+              <h2>Foods To  Avoid</h2>
               <!-- <span class="back-text">Testimonial</span> -->
             </div>
           </div>
@@ -388,38 +393,27 @@
             <div class="owl-carousel centernonloop2">
               <div class="slide" data-aos="fade-left" data-aos-delay="100">
                 <blockquote class="testimonial">
-                  <p>&ldquo; Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. &rdquo;</p>
-                  <div class="d-flex author">
-                    <img src="{{asset('frontend_assets/img/person_1.jpg')}}" alt="" class="mr-4">
-                    <div class="author-info">
-                      <h4>Mellisa Howard</h4>
-                      <p>CEO, XYZ Company</p>
-                    </div>
-                  </div>  
+                <ul class="fruit">
+                   <li>Fast food: Chicken nuggets, fries, pizza, hot dogs etc.</li>
+                   <li>Refined carbs: White bread, sugary cereals, white pasta, bagels, crackers, corn chips, tortillas, etc.</li>
+                </ul> 
                 </blockquote>
               </div>
               <div class="slide" data-aos="fade-left" data-aos-delay="200">
                 <blockquote class="testimonial">
-                  <p>&ldquo; Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. &rdquo;</p>
-                  <div class="d-flex author">
-                    <img src="{{asset('frontend_assets/img/person_2.jpg')}}" alt="" class="mr-4">
-                    <div class="author-info">
-                      <h4>Mike Richardson</h4>
-                      <p>CEO, XYZ Company</p>
-                    </div>
-                  </div>  
+                  <ul class="fruit">
+                     <li>Added sugars: Sugary snack bars, candy, baked goods, candy, table sugar, agave, etc.</li>
+                     <li>Processed foods: Packaged foods, processed meats (deli meats, bacon), boxed pasta dishes, cereal bars, etc.</li>
+                  </ul>
                 </blockquote>
               </div>
               <div class="slide" data-aos="fade-left" data-aos-delay="300">
                 <blockquote class="testimonial">
-                  <p>&ldquo; Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. &rdquo;</p>
-                  <div class="d-flex author">
-                    <img src="{{asset('frontend_assets/img/person_3.jpg')}}" alt="" class="mr-4">
-                    <div class="author-info">
-                      <h4>Charles White</h4>
-                      <p>CEO, XYZ Company</p>
-                    </div>
-                  </div>  
+                 <ul class="fruit">
+                  <li>Fried foods: Potato chips, deep-fried foods, doughnuts, mozzarella sticks, etc.</li>
+                   <li> Diet and low-fat foods: Diet bars, low-fat ice cream, low-fat chips, diet frozen meals, low-calorie candies, etc.</li>
+                   <li>Sweetened beverages: Soda, fruit juice, energy drinks, flavored milks, sweetened coffee drinks, etc.</li>
+                 </ul>
                 </blockquote>
               </div>
             </div>

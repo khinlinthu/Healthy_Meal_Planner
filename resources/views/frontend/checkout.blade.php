@@ -1,6 +1,8 @@
     
 <!DOCTYPE html>
 <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <title>Healthy food</title>
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -24,19 +26,19 @@
 
 
     <link rel="stylesheet" href="{{asset('frontend_assets/fonts/ionicons/css/ionicons.min.css')}}">
-   <!--  <link rel="stylesheet" href="{{asset('frontend_assets/fonts/fontawesome/css/font-awesome.min.css')}}"> -->
+    <link rel="stylesheet" href="{{asset('frontend_assets/fonts/fontawesome/css/font-awesome.min.css')}}">
     <link rel="stylesheet" href="{{asset('frontend_assets/fonts/flaticon/font/flaticon.css')}}">
 
     <!-- Theme Style -->
     <link rel="stylesheet" href="{{asset('frontend_assets/css/style.css')}}">
     <link rel="stylesheet" href="{{asset('my_asset/css/myassetstyle.css')}}">
     <link rel="stylesheet" href="{{asset('my_asset/font.css')}}">
-    <link rel="stylesheet" href="{{asset('my_asset/fontawesome/css/all.min.css')}}">
-
+   <!--  <link rel="stylesheet" href="{{asset('frontend_assets/fonts/fontawesome/css/all.min.css')}}">
+ -->
 
   </head>
   <body>
-       
+    
     <header role="banner">
       <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container">
@@ -72,6 +74,8 @@
                       <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                           @csrf
                       </form>
+
+                      <a class="dropdown-item" href="{{route('history')}}">Order History</a>
                   </div>
                  </li>
                   @else
@@ -126,75 +130,75 @@
       </section>
     <!-- END slider -->
     </div> 
-  <!-- Subcategory Title -->
-  <div class="jumbotron jumbotron-fluid subtitle">
+
+    <section class="section  pt-5 top-slant-white2 relative-higher bottom-slant-gray">
+      
       <div class="container">
-        <h1 class="text-center text-white"> Your Shopping Cart </h1>
-      </div>
-  </div>
-  
-  <!-- Content -->
-  <div class="container mt-5" style="background-color: #fff">
+        <div class="row">
+          <div class="col-lg-12">
+                  <div class="row mt-5 shoppingcart_div">
+                    <div class="col-12">
+                      <a href="index.php" class="btn mainfullbtncolor btn-outline-secondary float-right px-3" > 
+                        <i class="icofont-shopping-cart"></i>
+                        Continue Shopping 
+                      </a>
+                    </div>
+                  </div>
+
+
+                <form method="" action="" class="checkout">
+                  <div class="row mt-5 shoppingcart_div">
+                    <div class="table-responsive">
+                      <table class="table">
+                        <thead>
+                          <tr>
+
+                            <th colspan="2"> FoodPackages</th>
+                            <th colspan="3"> Qty</th>
+                            <th>Price</th>
+                            <th>Subtotal</th>
+
+                          </tr>
+                        </thead>
+                          <tbody id="shoppingcart_table">
+                            
+
+                          </tbody>
+                        
+                          <tfoot id="shoppingcart_tfoot">
+                            
+                            <tr> 
+                              <td colspan="5"> 
+                                <textarea class="form-control notes" placeholder="Any Request..." required></textarea>
+                              </td>
+                              <td colspan="3">
+                               
+                               @role('customer')
+                                <button class="btn btn-secondary btn-block mainfullbtncolor"> 
+                                  Check Out 
+                                </button>
+                                @else
+                                <button class="btn btn-secondary btn-block mainfullbtncolor"> <a href="{{route('signinpage')}}"></a>
+                                   Please Signin 
+                                </button>
+                                @endrole
+                              </td>
+
+                            </tr>
+                          </tfoot>
+                        </table>
+                      </div>
+                    </div>
+
+                </form>
     
-    <!-- Shopping Cart Div -->
-    <div class="row mt-5 shoppingcart_div">
-      <div class="col-12">
-        <a href="index.php" class="btn mainfullbtncolor btn-outline-secondary float-right px-3" > 
-          <i class="icofont-shopping-cart"></i>
-          Continue Shopping 
-        </a>
+          </div>
+          
+        </div>
       </div>
-    </div>
 
-
-        <form method="" action="" class="checkout">
-          <div class="row mt-5 shoppingcart_div">
-            <div class="table-responsive">
-              <table class="table">
-                <thead>
-                  <tr>
-
-                    <th colspan="2"> FoodPackages</th>
-                    <th colspan="3"> Qty</th>
-                    <th>Price</th>
-                    <th>Subtotal</th>
-
-                  </tr>
-                </thead>
-                  <tbody id="shoppingcart_table">
-                    
-
-                  </tbody>
-                
-                  <tfoot id="shoppingcart_tfoot">
-                    
-                    <tr> 
-                      <td colspan="5"> 
-                        <textarea class="form-control notes" placeholder="Any Request..." required></textarea>
-                      </td>
-                      <td colspan="3">
-                       
-                       @role('customer')
-                        <button class="btn btn-secondary btn-block mainfullbtncolor"> 
-                          Check Out 
-                        </button>
-                        @else
-                        <button class="btn btn-secondary btn-block mainfullbtncolor"> <a href="{{route('signinpage')}}"></a>
-                           Please Signin 
-                        </button>
-                        @endrole
-                      </td>
-
-                    </tr>
-                  </tfoot>
-                </table>
-              </div>
-            </div>
-
-        </form>
-    
-
-</div>
+    </section>
+ 
 
 
     <footer class="site-footer" role="contentinfo" style="background-color: #fff;">

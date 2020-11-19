@@ -211,6 +211,8 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
   <!--   <script src="{{asset('frontend_assets/js/bootstrap.bundle.min.js')}}"></script> -->
     <script src="{{asset('my_asset/js/custom.js')}}"></script>
     <script src="{{asset('my_asset/js/bmi.js')}}"></script>
+    <script src="{{asset('my_asset/js/shopcart.js')}}"></script>
+
     @yield('script')
   </body>
 </html>
