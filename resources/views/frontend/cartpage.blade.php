@@ -29,13 +29,6 @@
           <thead>
             <tr>
 
-         <!--      <th colspan="2"> Breakfast</th>
-              <th colspan="2"> Lunch</th>
-              <th colspan="2">Dinner</th>
-              <th>Price</th>
-              <th>Qty</th>
-              <th>Subotal</th> -->
-
               <th colspan="2"> FoodPackages</th>
               <th colspan="3"> Qty</th>
               <th>Price</th>
@@ -100,8 +93,8 @@
             console.log(order);
             $.post("{{route('order.store')}}",{order:order,notes:notes},function (response) {
               alert(response.msg);
-              // localStorage.clear();
-              // location.href="/";
+              localStorage.clear();
+              location.href="/";
             })
             e.preventDefault();
           }
